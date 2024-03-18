@@ -5,7 +5,8 @@ export default {
 		extend: {
 			fontFamily: {
 				mono: ['"JetBrains Mono"', 'monospace'],
-				barlow: ['Barlow', 'sans-serif']
+				barlow: ['Barlow', 'sans-serif'],
+				biryani: ['Biryani']
 			}
 		}
 	},

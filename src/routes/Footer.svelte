@@ -8,8 +8,10 @@
 				class="hover:font-medium"
 				href="https://kit.svelte.dev/"
 				target="_blank"
-				rel="noopener noreferrer">SvelteKit</a
+				rel="noopener noreferrer"
 			>
+				SvelteKit
+			</a>
 		</p>
 	</div>
 </footer>
