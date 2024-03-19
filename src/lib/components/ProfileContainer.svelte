@@ -1,5 +1,4 @@
 <script>
-	import profile from '$lib/images/profile.png';
 	import email from '$lib/images/email.svg';
 	import github from '$lib/images/github-mark.svg';
 	import instagram from '$lib/images/instagram_mark.svg';
@@ -8,7 +7,7 @@
 <!-- Profile pic, name and social buttons -->
 <div class="flex flex-col items-center mb-8">
 	<!-- Profile pic -->
-	<img alt="profile pic" src={profile} class="w-36 rounded-full" />
+	<enhanced:img alt="profile pic" src="$lib/images/profile.png" class="w-36 rounded-full" />
 	<!-- Name -->
 	<h1 class="font-semibold font-biryani text-xl my-1">Joonyoung Park</h1>
 	<!-- Social Buttons -->
@@ -48,7 +47,7 @@
 			rel="noopener noreferrer"
 			class="font-medium hover:underline"
 		>
-			Electrical & Computer Engineering,
+			Electrical & Computer Engineering
 		</a>
 		and
 		<a
@@ -57,7 +56,7 @@
 			rel="noopener noreferrer"
 			class="font-medium hover:underline"
 		>
-			Information Science & Cultural Studies.
+			Information Science.
 		</a>
 	</p>
 	<p>
