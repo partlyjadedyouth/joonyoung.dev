@@ -5,7 +5,14 @@
 	const ischiveInfo = {
 		year: '2023-2024',
 		title: 'ISCHIVE.com',
-		description: 'A website that archives assignments submitted by Information Science students.',
+		description: 'A website that archives assignments submitted by Information Science students',
+		thumbnail: '/images/ischive.jpeg'
+	};
+
+	const wavinInfo = {
+		year: '2024',
+		title: 'Wavin',
+		description: 'A design of audio visualization for D/HH listeners',
 		thumbnail: '/images/ischive.jpeg'
 	};
 </script>
@@ -36,5 +43,6 @@
 	</div>
 
 	<!-- Project container -->
+	<ProjectContainer {...wavinInfo} />
 	<ProjectContainer {...ischiveInfo} />
 </section>
