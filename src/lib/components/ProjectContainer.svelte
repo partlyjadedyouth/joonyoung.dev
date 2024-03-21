@@ -16,9 +16,7 @@
 		<p class="font-light text-sm">{description}</p>
 	</div>
 	<!-- Project thumbnail -->
-	{#if thumbnail}
-		<div class="w-36 border border-gray-400">
-			<img alt={title} src={thumbnail} class="object-contain" />
-		</div>
-	{/if}
+	<div class="w-36 border border-gray-400">
+		<img alt={title} src={thumbnail} class="object-contain" />
+	</div>
 </div>

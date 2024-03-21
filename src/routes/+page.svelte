@@ -1,20 +1,7 @@
 <script lang="ts">
 	import ProfileContainer from '$lib/components/ProfileContainer.svelte';
 	import ProjectContainer from '$lib/components/ProjectContainer.svelte';
-
-	const ischiveInfo = {
-		year: '2023-2024',
-		title: 'ISCHIVE.com',
-		description: 'A website that archives assignments submitted by Information Science students',
-		thumbnail: '/images/ischive.jpeg'
-	};
-
-	const wavinInfo = {
-		year: '2024',
-		title: 'Wavin',
-		description: 'A design of audio visualization for D/HH listeners',
-		thumbnail: '/images/ischive.jpeg'
-	};
+	import { ischiveInfo, wavinInfo } from '$lib/data/projects';
 </script>
 
 <svelte:head>
