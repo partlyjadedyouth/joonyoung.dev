@@ -7,8 +7,12 @@
 <section class="flex flex-col items-center py-20">
 	<!-- Title -->
 	<p class="font-biryani font-semibold text-3xl">{project.title}</p>
+
 	<!-- Project year -->
 	<p class="font-barlow mt-4 text-lg">{project.year}</p>
+
+	<!-- PDF, Web, Video links -->
+
 	<!-- Thumbnail -->
 	<img
 		alt="thumbnail"
