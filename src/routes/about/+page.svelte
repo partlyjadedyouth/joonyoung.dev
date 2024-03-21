@@ -1,6 +1,6 @@
 <script>
 	import email from '$lib/images/email.svg';
-	import safari from '$lib/images/safari.svg';
+	import browser from '$lib/images/browser.png';
 </script>
 
 <svelte:head>
@@ -28,7 +28,7 @@
 		rel="noopener noreferrer"
 		class="flex items-center"
 	>
-		<img alt="safari" src={safari} class="w-5 mr-1" />
+		<img alt="Browser icons created by kmg design - Flaticon" src={browser} class="w-5 mr-1" />
 		<p class="font-barlow">parlyjadedyouth.github.io</p>
 	</a>
 </section>
