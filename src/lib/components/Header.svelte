@@ -17,7 +17,7 @@
 			<p class="mr-5 hover:font-medium" class:underline={$page.url.pathname === '/about'}>
 				<a href="/about">about</a>
 			</p>
-			<p class="hover:font-medium" class:underline={$page.url.pathname === '/projects'}>
+			<p class="hover:font-medium" class:underline={$page.url.pathname.includes('/projects')}>
 				<a href="/projects">projects</a>
 			</p>
 		</div>
