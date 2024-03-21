@@ -22,4 +22,4 @@ export const wavinInfo: Project = {
 	thumbnail: '/images/ischive.jpeg'
 };
 
-export const projects: Project[] = [ischiveInfo, wavinInfo];
+export const projects: Project[] = [wavinInfo, ischiveInfo, ischiveInfo, ischiveInfo, ischiveInfo];

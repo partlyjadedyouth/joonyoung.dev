@@ -1,7 +1,7 @@
 <script lang="ts">
 	import ProfileContainer from '$lib/components/ProfileContainer.svelte';
 	import ProjectContainer from '$lib/components/ProjectContainer.svelte';
-	import { ischiveInfo, wavinInfo } from '$lib/data/projects';
+	import { projects } from '$lib/data/projects';
 </script>
 
 <svelte:head>
@@ -30,6 +30,7 @@
 	</div>
 
 	<!-- Project container -->
-	<ProjectContainer {...wavinInfo} />
-	<ProjectContainer {...ischiveInfo} />
+	{#each projects.slice(0, 3) as project}
+		<ProjectContainer {...project} />
+	{/each}
 </section>

@@ -8,7 +8,7 @@
 	<meta name="description" content="Joonyoung's Blog" />
 </svelte:head>
 
-<section class="pt-10">
+<section class="pt-20">
 	<!-- Name -->
 	<h1 class="font-biryani text-2xl font-semibold">Joonyoung Park</h1>
 	<!-- Email -->
