@@ -6,7 +6,7 @@
 
 <Header />
 <div class="flex flex-col min-h-screen items-center">
-	<main class="flex flex-col w-full flex-auto max-w-xl">
+	<main class="flex flex-col w-full flex-auto max-w-[18rem] sm:max-w-xl">
 		<slot />
 	</main>
 </div>

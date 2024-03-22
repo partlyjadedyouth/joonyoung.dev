@@ -33,7 +33,7 @@
 		class="mt-10 rounded border border-gray-400 w-full"
 	/>
 
-	<div class="px-10 mt-12 font-barlow">
+	<div class="sm:px-10 mt-12 font-barlow">
 		<!-- Post -->
 		<p class="font-light hyphenate">{project.post}</p>
 		<!-- What I've done -->
