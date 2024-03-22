@@ -30,7 +30,8 @@ export const wavinInfo: Project = {
 	description: 'A design of audio visualization for D/HH listeners',
 	thumbnail: '/images/ischive.jpeg',
 	role: 'Project leader',
-	post: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In efficitur, ipsum eu condimentum aliquet, orci lacus maximus sem, nec tempus dolor elit ac lorem. Quisque lobortis est turpis, non aliquet purus gravida at. Fusce turpis justo, tincidunt vel ante eget, euismod commodo erat. Suspendisse eleifend nibh enim, non imperdiet metus pharetra et. Sed lobortis suscipit erat, quis posuere justo sollicitudin in. Praesent tincidunt sollicitudin velit ut convallis. Nulla sed libero id mauris tincidunt luctus vitae eu justo. Praesent sollicitudin risus nulla, dignissim molestie mauris blandit vitae. Phasellus purus turpis, finibus id condimentum non, fermentum id eros. Aenean tortor diam, ultrices nec venenatis eget, viverra sed felis.'
+	post: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In efficitur, ipsum eu condimentum aliquet, orci lacus maximus sem, nec tempus dolor elit ac lorem. Quisque lobortis est turpis, non aliquet purus gravida at. Fusce turpis justo, tincidunt vel ante eget, euismod commodo erat. Suspendisse eleifend nibh enim, non imperdiet metus pharetra et. Sed lobortis suscipit erat, quis posuere justo sollicitudin in. Praesent tincidunt sollicitudin velit ut convallis. Nulla sed libero id mauris tincidunt luctus vitae eu justo. Praesent sollicitudin risus nulla, dignissim molestie mauris blandit vitae. Phasellus purus turpis, finibus id condimentum non, fermentum id eros. Aenean tortor diam, ultrices nec venenatis eget, viverra sed felis.',
+	pdf: '/projects/wavin/wavin_paper.pdf'
 };
 
 export const projects: Project[] = [wavinInfo, ischiveInfo, ischiveInfo, ischiveInfo, ischiveInfo];

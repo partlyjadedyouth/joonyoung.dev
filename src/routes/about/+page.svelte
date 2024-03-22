@@ -18,8 +18,8 @@
 		rel="noopener noreferrer"
 		class="flex items-center"
 	>
-		<img alt="email" src={email} class="w-5 mr-1" />
-		<p class="font-barlow">jooony@snu.ac.kr</p>
+		<img alt="email" src={email} class="w-5 mr-1 pt-1" />
+		<p class="font-barlow hover:font-medium hover:underline">jooony@snu.ac.kr</p>
 	</a>
 	<!-- Website -->
 	<a
@@ -28,8 +28,8 @@
 		rel="noopener noreferrer"
 		class="flex items-center"
 	>
-		<img alt="Browser icons created by kmg design - Flaticon" src={browser} class="w-5 mr-1" />
-		<p class="font-barlow">parlyjadedyouth.github.io</p>
+		<img alt="Browser icons created by kmg design - Flaticon" src={browser} class="w-5 mr-1 pt-1" />
+		<p class="font-barlow hover:font-medium hover:underline">parlyjadedyouth.github.io</p>
 	</a>
 </section>
 

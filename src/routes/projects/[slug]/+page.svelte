@@ -1,4 +1,6 @@
-<script type="ts">
+<script lang="ts">
+	import LinkContainer from '$lib/components/LinkContainer.svelte';
+	import document from '$lib/images/document.svg';
 	export let data;
 
 	const project = data.project[0];
@@ -9,9 +11,20 @@
 	<p class="font-biryani font-semibold text-3xl">{project.title}</p>
 
 	<!-- Project year -->
-	<p class="font-barlow mt-4 text-lg">{project.year}</p>
+	<p class="font-barlow mt-1 text-lg">{project.year}</p>
 
 	<!-- PDF, Web, Video links -->
+	<div class="flex items-center justify-between gap-x-2">
+		{#if project.pdf}
+			<LinkContainer linkType="pdf" url={project.pdf} />
+		{/if}
+		{#if project.web}
+			<LinkContainer linkType="web" url={project.web} />
+		{/if}
+		{#if project.video}
+			<LinkContainer linkType="video" url={project.video} />
+		{/if}
+	</div>
 
 	<!-- Thumbnail -->
 	<img

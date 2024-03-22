@@ -1,4 +1,4 @@
-<script type="ts">
+<script lang="ts">
 	import { projects } from '$lib/data/projects';
 	import ProjectContainer from '$lib/components/ProjectContainer.svelte';
 </script>

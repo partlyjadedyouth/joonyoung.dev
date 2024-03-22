@@ -4,11 +4,7 @@
 
 <header>
 	<!-- Navigation bar -->
-	<div class="flex justify-between px-5 py-4 shadow-md">
-		<!-- Logo -->
-		<p class="font-mono font-medium">
-			<a href="/">partlyjadedyouth</a>
-		</p>
+	<div class="flex justify-end px-5 py-4">
 		<!-- home, about, and projects -->
 		<div class="flex justify-center font-barlow font-regular">
 			<p class="mr-5 hover:font-medium" class:underline={$page.url.pathname === '/'}>
