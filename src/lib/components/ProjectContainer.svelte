@@ -14,11 +14,11 @@
 		<!-- Project description -->
 		<div class="flex flex-col max-w-sm">
 			<p class="font-thin text-sm mb-3">{year}</p>
-			<p class="font-medium text-lg mb-1">{title}</p>
+			<p class="font-regular text-lg mb-1">{title}</p>
 			<p class="font-light text-sm">{description}</p>
 		</div>
 		<!-- Project thumbnail -->
-		<div class="w-36 border border-gray-400">
+		<div class="w-36 border border-gray-400 hidden sm:block">
 			<img alt={title} src={thumbnail} class="object-contain" />
 		</div>
 	</div>

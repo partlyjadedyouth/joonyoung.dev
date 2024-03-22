@@ -42,15 +42,3 @@
 		<p class="mt-1 text-sm font-light">{project.role}</p>
 	</div>
 </section>
-
-<style>
-	/* hyphenate wrapped words */
-	.hyphenate {
-		overflow-wrap: break-word;
-		word-wrap: break-word;
-		-webkit-hyphens: auto;
-		-moz-hyphens: auto;
-		-ms-hyphens: auto;
-		hyphens: auto;
-	}
-</style>
