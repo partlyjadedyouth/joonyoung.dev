@@ -7,6 +7,12 @@
 	<h1 class="font-barlow font-medium text-2xl mb-5">PROJECTS</h1>
 
 	{#each projects as project}
-		<ProjectContainer {...project} />
+		<ProjectContainer
+			id={project.id}
+			year={project.year}
+			title={project.title}
+			description={project.description}
+			thumbnail={project.thumbnail}
+		/>
 	{/each}
 </section>

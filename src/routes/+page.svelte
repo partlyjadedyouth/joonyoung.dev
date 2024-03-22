@@ -31,6 +31,12 @@
 
 	<!-- Project container -->
 	{#each projects.slice(0, 3) as project}
-		<ProjectContainer {...project} />
+		<ProjectContainer
+			id={project.id}
+			year={project.year}
+			title={project.title}
+			description={project.description}
+			thumbnail={project.thumbnail}
+		/>
 	{/each}
 </section>
