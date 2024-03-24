@@ -23,13 +23,13 @@
 	</a>
 	<!-- Website -->
 	<a
-		href="https://partlyjadedyouth.github.io"
+		href="https://jooony.vercel.app"
 		target="_blank"
 		rel="noopener noreferrer"
 		class="flex items-center"
 	>
 		<img alt="Browser icons created by kmg design - Flaticon" src={browser} class="w-5 mr-1 pt-1" />
-		<p class="font-barlow hover:font-medium hover:underline">parlyjadedyouth.github.io</p>
+		<p class="font-barlow hover:font-medium hover:underline">jooony.vercel.app</p>
 	</a>
 </section>
 
