@@ -3,6 +3,11 @@
 	import ProjectContainer from '$lib/components/ProjectContainer.svelte';
 </script>
 
+<svelte:head>
+	<title>projects</title>
+	<meta name="description" content="Joonyoung's Blog" />
+</svelte:head>
+
 <section class="py-10">
 	<h1 class="font-barlow font-medium text-2xl mb-5">PROJECTS</h1>
 

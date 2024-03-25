@@ -6,6 +6,11 @@
 	const project = data.project[0];
 </script>
 
+<svelte:head>
+	<title>{project.title}</title>
+	<meta name="description" content="Joonyoung's Blog" />
+</svelte:head>
+
 <section class="flex flex-col items-center py-20">
 	<!-- Title -->
 	<p class="font-biryani font-semibold text-3xl">{project.title}</p>
