@@ -4,7 +4,7 @@
 </script>
 
 <svelte:head>
-	<title>{pdfUrl}</title>
+	<title>file</title>
 	<meta name="description" content="Joonyoung's Blog" />
 </svelte:head>
 
