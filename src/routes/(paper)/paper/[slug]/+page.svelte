@@ -1,11 +1,12 @@
 <script lang="ts">
 	import { page } from '$app/stores';
-	const pdfUrl = $page.url.pathname.split('/')[2];
+	const fileName = $page.url.pathname.split('/')[2];
 </script>
 
 <svelte:head>
-	<title>file</title>
+	<title>{fileName}</title>
 	<meta name="description" content="Joonyoung's Blog" />
 </svelte:head>
 
-<iframe src={`/pdfs/${pdfUrl}`} title="pdf" class="w-full h-screen"></iframe>
+<iframe src={`/pdfs/${fileName}`} frameborder="0" title="pdf" style="width: 99vw; height: 100vh;"
+></iframe>
