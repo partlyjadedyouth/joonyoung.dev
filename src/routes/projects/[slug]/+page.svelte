@@ -20,8 +20,8 @@
 
 	<!-- PDF, Web, Video links -->
 	<div class="flex items-center justify-between gap-x-2">
-		{#if project.pdf}
-			<LinkContainer linkType="pdf" url={project.pdf} />
+		{#if project.fileName}
+			<LinkContainer linkType="pdf" url={`/paper/${project.fileName}`} />
 		{/if}
 		{#if project.web}
 			<LinkContainer linkType="web" url={project.web} />
