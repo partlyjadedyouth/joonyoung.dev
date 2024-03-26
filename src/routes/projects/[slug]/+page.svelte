@@ -1,6 +1,5 @@
 <script lang="ts">
 	import LinkContainer from '$lib/components/LinkContainer.svelte';
-	import document from '$lib/images/document.svg';
 	export let data;
 
 	const project = data.project[0];
@@ -20,15 +19,9 @@
 
 	<!-- PDF, Web, Video links -->
 	<div class="flex items-center justify-between gap-x-2">
-		{#if project.fileName}
-			<LinkContainer linkType="pdf" url={`/paper/${project.fileName}`} />
-		{/if}
-		{#if project.web}
-			<LinkContainer linkType="web" url={project.web} />
-		{/if}
-		{#if project.video}
-			<LinkContainer linkType="video" url={project.video} />
-		{/if}
+		{#each project.links as link}
+			<LinkContainer type={link.type} url={link.url} />
+		{/each}
 	</div>
 
 	<!-- Thumbnail -->
