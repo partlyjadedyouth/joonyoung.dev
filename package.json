@@ -1,6 +1,6 @@
 {
-	"name": "partlyjadedyouth.github.io",
-	"version": "0.0.1",
+	"name": "jooony.me",
+	"version": "1.0.0",
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",
