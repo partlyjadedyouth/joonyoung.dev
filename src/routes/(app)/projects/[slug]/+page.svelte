@@ -40,7 +40,7 @@
 
 	<div class="sm:px-10 mt-12 font-barlow">
 		<!-- Post -->
-		<p class="font-light hyphenate">{project.post}</p>
+		<p class="font-light hyphenate">{@html project.post}</p>
 		<!-- What I've done -->
 		<hr class="border-[0.5px] border-gray-500 w-full mt-12" />
 		<p class="mt-2 font-medium">What I've done...</p>
