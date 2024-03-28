@@ -61,8 +61,7 @@
 	</p>
 	<p>
 		My research interest lies in the intersection of human-computer interaction (HCI), human-AI
-		interaction (HAI), natural language processing (NLP), and electrical engineering. Specifically,
-		I want to find ways to improve the interaction and accessibility of computers for marginalized
-		people.
+		interaction (HAI), and electrical engineering. Specifically, I want to find ways to improve the
+		interaction and accessibility of computers for marginalized people.
 	</p>
 </div>

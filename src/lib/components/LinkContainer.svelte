@@ -24,7 +24,7 @@
 			<img alt="document" src={link} class="w-3 m-1 pt-1" />
 			<p class="font-barlow text-light hover:font-medium hover:underline">link</p>
 		</div>
-	{:else if type === 'github'}
+	{:else if type === 'code'}
 		<div class="flex items-center">
 			<img alt="github" src={github} class="w-3 m-1 pt-1" />
 			<p class="font-barlow text-light hover:font-medium hover:underline">github</p>
