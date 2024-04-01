@@ -34,10 +34,10 @@
 </section>
 
 <!-- EDUCATION -->
-<section class="pt-10 font-barlow">
+<section class="mt-10 font-barlow">
 	<h1 class="text-2xl font-medium">EDUCATION</h1>
 
-	<div class="pt-2">
+	<div class="mt-2">
 		<b class="font-medium">Seoul National University</b>, Seoul, Republic of Korea
 	</div>
 	<div class="font-light">
@@ -51,20 +51,62 @@
 </section>
 
 <!-- EXPERIENCE -->
-<section class="py-10 font-barlow">
+<section class="mt-10 font-barlow">
 	<h1 class="text-2xl font-medium">RESEARCH & WORK EXPERIENCE</h1>
 
-	<div class="pt-2">
+	<div class="mt-2">
 		<a href="http://hcid.snu.ac.kr/" target="_blank" rel="noopener noreferrer">
 			<b class="font-medium hover:underline">HCI+d Lab,</b>
 		</a> Seoul National University
 	</div>
 	<div class="font-light">Undergraduate Research Intern</div>
-	<div class="font-extralight">Jan 2024 - Present *</div>
+	<div class="font-extralight">Jan 2024 - Present</div>
 
-	<div class="pt-5">
+	<div class="mt-3">
 		<b class="font-medium">Samsung Electro-Mechanics</b>, Suwon, Republic of Korea
 	</div>
-	<div class="font-light">Undergraduate Engineer Intern</div>
+	<div class="font-light">Undergraduate Intern</div>
 	<div class="font-extralight">Jul 2019 - Aug 2019</div>
 </section>
+
+<!-- AWARDS & HONORS -->
+<section class="mt-10 font-barlow">
+	<h1 class="text-2xl font-medium">AWARDS & HONORS</h1>
+
+	<div class="mt-2">
+		<b class="font-medium">10% Merit-Based Scholarship</b>, Seoul National University
+	</div>
+	<div class="font-extralight">Feb 2017</div>
+</section>
+
+<!-- PROFICIENCY -->
+<section class="mt-10 font-barlow">
+	<h1 class="text-2xl font-medium">PROFICIENCY</h1>
+
+	<h2 class="mt-2 text-lg font-medium">Languages</h2>
+	<div class="mt-1 font-light">
+		<b>Korean (Native):</b> Full professional proficiency in reading, writing, speaking, and comprehension
+	</div>
+	<div class="font-light">
+		<b>English (Fluent):</b> High proficiency in reading, writing, speaking, and comprehension. Comfortable
+		in professional and social contexts
+	</div>
+	<div class="font-light">
+		<b>Japanese (Elementary):</b> Basic communication skills for everyday use. Able to understand and
+		use familiar phrases and sentences
+	</div>
+
+	<h2 class="mt-3 text-lg font-medium">Programming & Design</h2>
+	<div class="mt-1 font-light">
+		<b>Languages:</b> Python, C/C++, Javascript, HTML/CSS, Dart
+	</div>
+	<div class="font-light">
+		<b>Tools & Frameworks:</b> Node.js, React/Next.js, Svelte/SvelteKit, p5.js, Flutter, TailwindCSS,
+		Numpy, Pandas
+	</div>
+	<div class="font-light">
+		<b>Others:</b> Git, LaTeX, Figma
+	</div>
+</section>
+
+<section class="pb-20"></section>
