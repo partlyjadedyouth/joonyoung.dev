@@ -12,7 +12,7 @@
 
 <section class="flex flex-col items-center py-20">
 	<!-- Title -->
-	<p class="font-biryani font-semibold text-3xl">{project.title}</p>
+	<p class="font-biryani font-semibold text-3xl text-center">{project.title}</p>
 
 	<!-- Project year -->
 	<p class="font-barlow mt-1 text-lg">{project.year}</p>
