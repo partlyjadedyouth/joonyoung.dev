@@ -88,17 +88,18 @@
 		<b>Korean (Native):</b> Full professional proficiency in reading, writing, speaking, and comprehension
 	</div>
 	<div class="font-light">
-		<b>English (Fluent):</b> High proficiency in reading, writing, speaking, and comprehension. Comfortable
-		in professional and social contexts
+		<b>English (Fluent):</b> High proficiency in reading, writing, speaking, and comprehension.
+		Comfortable in professional and social contexts.
+		<b>TEPS 455/600 (2024)</b>
 	</div>
 	<div class="font-light">
 		<b>Japanese (Elementary):</b> Basic communication skills for everyday use. Able to understand and
-		use familiar phrases and sentences
+		use elementary phrases and sentences
 	</div>
 
 	<h2 class="mt-3 text-lg font-medium">Programming & Design</h2>
 	<div class="mt-1 font-light">
-		<b>Languages:</b> Python, C/C++, Javascript, HTML/CSS, Dart
+		<b>Languages:</b> Python, C/C++, JavaScript/TypeScript, HTML & CSS, Dart
 	</div>
 	<div class="font-light">
 		<b>Tools & Frameworks:</b> Node.js, React/Next.js, Svelte/SvelteKit, p5.js, Flutter, TailwindCSS,
