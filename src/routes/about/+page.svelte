@@ -1,6 +1,7 @@
 <script>
 	import email from '$lib/images/email.svg';
 	import browser from '$lib/images/browser.png';
+	import LinkContainer from '$lib/components/LinkContainer.svelte';
 </script>
 
 <svelte:head>
@@ -10,7 +11,10 @@
 
 <section class="pt-20">
 	<!-- Name -->
-	<h1 class="font-biryani text-2xl font-semibold">Joonyoung Park</h1>
+	<div class="flex">
+		<h1 class="font-biryani text-2xl font-semibold mr-2">Joonyoung Park</h1>
+		<LinkContainer type="pdf" url="/pdfs/cv.pdf" />
+	</div>
 	<!-- Email -->
 	<a
 		href="mailto:jooony@snu.ac.kr"
