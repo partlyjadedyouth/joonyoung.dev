@@ -3,6 +3,7 @@
 	import link from '$lib/images/link.svg';
 	import video from '$lib/images/video.svg';
 	import github from '$lib/images/github-mark.svg';
+	import cv from '$lib/images/cv.png';
 
 	export let type: string;
 	export let url: string;

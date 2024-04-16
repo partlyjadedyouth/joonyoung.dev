@@ -2,6 +2,7 @@
 	import email from '$lib/images/email.svg';
 	import github from '$lib/images/github-mark.svg';
 	import instagram from '$lib/images/instagram_mark.svg';
+	import cv from '$lib/images/cv.png';
 </script>
 
 <!-- Profile pic, name and social buttons -->
@@ -22,7 +23,11 @@
 		</a>
 		<!-- instagram -->
 		<a href="https://instagram.com/partlyjadedyouth" target="_blank" rel="noopener noreferrer">
-			<img alt="instagram" src={instagram} class="w-6" />
+			<img alt="instagram" src={instagram} class="w-6 mr-2" />
+		</a>
+		<!-- cv -->
+		<a href="/pdfs/cv.pdf" target="_blank" rel="noopener noreferrer">
+			<img alt="Document icons created by Freepik - Flaticon" src={cv} class="w-6 mr-2" />
 		</a>
 	</div>
 </div>
