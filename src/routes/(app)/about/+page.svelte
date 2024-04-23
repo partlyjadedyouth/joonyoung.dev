@@ -103,11 +103,11 @@
 
 	<h2 class="mt-3 text-lg font-medium">Programming & Design</h2>
 	<div class="mt-1 font-light">
-		<b>Languages:</b> Python, C/C++, JavaScript/TypeScript, HTML & CSS, Dart
+		<b>Languages:</b> Python, C/C++, JavaScript/TypeScript, HTML & CSS, Dart, C#
 	</div>
 	<div class="font-light">
 		<b>Tools & Frameworks:</b> Node.js, React/Next.js, Svelte/SvelteKit, p5.js, Flutter, TailwindCSS,
-		Numpy, Pandas
+		NumPy, Pandas, Unity
 	</div>
 	<div class="font-light">
 		<b>Others:</b> Git, LaTeX, Figma
