@@ -34,7 +34,7 @@ const ischive: Project = {
 		'A website that archives coursework submitted by Dept. of Information Science students',
 	thumbnail: '/images/ischive.jpeg',
 	role: 'Web development, service design',
-	post: 'This website is designed to archive the coursework produced by students in the Dept. of Information Science at Seoul National University.<br /><br />I started this project with my colleagues and the official support of the department in December 2023. After several revisions of the plan and changes to the technology stack, we completed the deployment in July 2023.',
+	post: 'This website is designed to archive the coursework submitted by students in the Dept. of Information Science at Seoul National University.<br /><br />I started this project with my colleagues and the official support of the department in December 2022. After several revisions of the plan and changes to the technology stack, we completed the deployment in July 2023.',
 	links: [{ type: 'web', url: 'https://ischive.com' }]
 };
 
