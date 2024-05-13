@@ -27,13 +27,13 @@
 	</a>
 	<!-- Website -->
 	<a
-		href="https://jooony.vercel.app"
+		href="https://joonyoung.dev"
 		target="_blank"
 		rel="noopener noreferrer"
 		class="flex items-center"
 	>
 		<img alt="Browser icons created by kmg design - Flaticon" src={browser} class="w-5 mr-1 pt-1" />
-		<p class="font-ibm hover:font-medium hover:underline">jooony.vercel.app</p>
+		<p class="font-ibm hover:font-medium hover:underline">joonyoung.dev</p>
 	</a>
 </section>
 
