@@ -1,6 +1,6 @@
 <footer>
 	<!-- Footer -->
-	<div class="flex flex-col items-center font-barlow text-xs font-light py-2 shadow-inner">
+	<div class="flex flex-col font-ibm text-xs font-light pt-2 pb-5 items-center">
 		<p>Copyright © 2024 Joonyoung Park</p>
 		<p>
 			Powered by

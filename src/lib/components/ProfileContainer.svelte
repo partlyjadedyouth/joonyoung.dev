@@ -33,7 +33,7 @@
 </div>
 
 <!-- Self-introduction -->
-<div class="flex flex-col font-barlow font-light text-md hyphenate">
+<div class="flex flex-col font-ibm font-light text-md hyphenate">
 	<p class="mb-3">
 		I am an aspiring HCI researcher and undergraduate student in
 		<a

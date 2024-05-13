@@ -15,7 +15,7 @@
 	<p class="font-biryani font-semibold text-3xl text-center">{project.title}</p>
 
 	<!-- Project year -->
-	<p class="font-barlow mt-1 text-lg">{project.year}</p>
+	<p class="font-ibm mt-1 text-lg">{project.year}</p>
 
 	<!-- PDF, Web, Video links -->
 	<div class="flex items-center justify-between gap-x-2">
@@ -31,7 +31,7 @@
 		class="mt-10 rounded border border-gray-400 w-full"
 	/>
 
-	<div class="sm:px-10 mt-12 font-barlow">
+	<div class="sm:px-10 mt-12 font-ibm">
 		<!-- Post -->
 		<p class="font-light hyphenate">{@html project.post}</p>
 		<!-- What I've done -->

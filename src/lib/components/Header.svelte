@@ -6,7 +6,7 @@
 	<!-- Navigation bar -->
 	<div class="flex justify-end px-5 py-4">
 		<!-- home, about, and projects -->
-		<div class="flex justify-center font-barlow font-regular">
+		<div class="flex justify-center font-ibm font-light">
 			<p class="mr-5 hover:font-medium" class:underline={$page.url.pathname === '/'}>
 				<a href="/">home</a>
 			</p>

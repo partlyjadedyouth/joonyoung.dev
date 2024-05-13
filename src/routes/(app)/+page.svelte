@@ -18,11 +18,11 @@
 <section class="py-10">
 	<div class="flex justify-between">
 		<!-- Title -->
-		<h1 class="font-barlow font-medium text-xl">Latest Projects</h1>
+		<h1 class="font-ibm font-medium text-xl">Latest Projects</h1>
 		<!-- Link to /projects -->
 		<a href="/projects">
 			<div
-				class="font-barlow text-xs font-medium border rounded px-3 py-1 border-gray-500 hover:bg-black hover:text-white"
+				class="text-xs font-medium border rounded px-3 py-1 border-gray-500 hover:bg-black hover:text-white"
 			>
 				View all
 			</div>

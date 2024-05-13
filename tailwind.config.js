@@ -5,8 +5,12 @@ export default {
 		extend: {
 			fontFamily: {
 				mono: ['"JetBrains Mono"', 'monospace'],
-				barlow: ['Barlow', 'sans-serif'],
-				biryani: ['Biryani']
+				barlow: ['Barlow'],
+				biryani: ['Biryani'],
+				montserrat: ['Montserrat'],
+				roboto: ['Roboto'],
+				neue: ['Helvetica Neue'],
+				ibm: ['IBM Plex Sans']
 			}
 		}
 	},

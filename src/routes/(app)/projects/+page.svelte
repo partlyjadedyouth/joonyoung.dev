@@ -9,7 +9,7 @@
 </svelte:head>
 
 <section class="py-10">
-	<h1 class="font-barlow font-medium text-2xl mb-5">PROJECTS</h1>
+	<h1 class="font-ibm font-medium text-2xl mb-5">PROJECTS</h1>
 
 	{#each projects as project}
 		<ProjectContainer

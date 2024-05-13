@@ -23,7 +23,7 @@
 		class="flex items-center"
 	>
 		<img alt="email" src={email} class="w-5 mr-1 pt-1" />
-		<p class="font-barlow hover:font-medium hover:underline">jooony@snu.ac.kr</p>
+		<p class="font-ibm hover:font-medium hover:underline">jooony@snu.ac.kr</p>
 	</a>
 	<!-- Website -->
 	<a
@@ -33,12 +33,12 @@
 		class="flex items-center"
 	>
 		<img alt="Browser icons created by kmg design - Flaticon" src={browser} class="w-5 mr-1 pt-1" />
-		<p class="font-barlow hover:font-medium hover:underline">jooony.vercel.app</p>
+		<p class="font-ibm hover:font-medium hover:underline">jooony.vercel.app</p>
 	</a>
 </section>
 
 <!-- EDUCATION -->
-<section class="mt-10 font-barlow">
+<section class="mt-10 font-ibm">
 	<h1 class="text-2xl font-medium">EDUCATION</h1>
 
 	<div class="mt-2">
@@ -55,7 +55,7 @@
 </section>
 
 <!-- EXPERIENCE -->
-<section class="mt-10 font-barlow">
+<section class="mt-10 font-ibm">
 	<h1 class="text-2xl font-medium">RESEARCH & WORK EXPERIENCE</h1>
 
 	<div class="mt-2">
@@ -74,7 +74,7 @@
 </section>
 
 <!-- AWARDS & HONORS -->
-<section class="mt-10 font-barlow">
+<section class="mt-10 font-ibm">
 	<h1 class="text-2xl font-medium">AWARDS & HONORS</h1>
 
 	<div class="mt-2">
@@ -84,7 +84,7 @@
 </section>
 
 <!-- PROFICIENCY -->
-<section class="mt-10 font-barlow">
+<section class="mt-10 font-ibm">
 	<h1 class="text-2xl font-medium">PROFICIENCY</h1>
 
 	<h2 class="mt-2 text-lg font-medium">Languages</h2>

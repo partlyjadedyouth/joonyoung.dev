@@ -9,7 +9,7 @@
 <!-- Project container -->
 <a href={`/projects/${id}`}>
 	<div
-		class="font-barlow container border-gray-400 hover:border-gray-700 border rounded-lg my-4 px-4 py-5 min-h-40 flex items-center justify-between"
+		class="font-ibm container border-gray-400 hover:border-gray-700 border rounded-lg my-4 px-4 py-5 min-h-40 flex items-center justify-between"
 	>
 		<!-- Project description -->
 		<div class="flex flex-col max-w-sm">
