@@ -8,6 +8,8 @@ role: 'Product design'
 links: [{ type: 'pdf', url: '/pdfs/together_bus.pdf' }]
 ---
 
+![thumbnail](/images/together-bus.png)
+
 In Korea, most concerts are held in Seoul, due to the high concentration of people in the metropolitan area. Therefore, people living in rural areas have to spend extra money on transportation and accommodation to attend concerts, which makes them hesitate to do so.
 
 ![flow-chart](/images/together-bus-flow-chart.png)

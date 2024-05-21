@@ -29,7 +29,7 @@ function parseFrontmatter(markdown: string): Project | null {
 
 	try {
 		// Parse the frontmatter using js-yaml
-		const frontmatterObject = yaml.load(frontmatter);
+		const frontmatterObject = yaml.load(frontmatter) as Partial<Project>;
 
 		const requiredKeys: (keyof Project)[] = [
 			'id',
@@ -47,12 +47,12 @@ function parseFrontmatter(markdown: string): Project | null {
 		}
 
 		return {
-			id: frontmatterObject.id,
-			year: frontmatterObject.year,
-			title: frontmatterObject.title,
-			description: frontmatterObject.description,
-			thumbnail: frontmatterObject.thumbnail,
-			role: frontmatterObject.role,
+			id: frontmatterObject.id as string,
+			year: frontmatterObject.year as string,
+			title: frontmatterObject.title as string,
+			description: frontmatterObject.description as string,
+			thumbnail: frontmatterObject.thumbnail as string,
+			role: frontmatterObject.role as string,
 			links: frontmatterObject.links as LinkDetails[]
 		};
 	} catch (error) {

@@ -1,10 +1,38 @@
 <script lang="ts">
 	import LinkContainer from '$lib/components/LinkContainer.svelte';
 	import { marked } from 'marked';
+	import { onMount } from 'svelte';
 
 	export let data;
 
 	const project = data.project;
+
+	function addPaddingToElements() {
+		const container = document.getElementById('post-container');
+		if (container) {
+			const children = container.children;
+			for (const child of children) {
+				if (!child.children[0] || child.children[0].tagName !== 'IMG') {
+					child.classList.add('sm:px-10');
+				}
+			}
+		}
+	}
+
+	function addBorderToImages() {
+		const postContainer = document.getElementById('post-container');
+		if (postContainer) {
+			const images = postContainer.getElementsByTagName('img');
+			for (let img of images) {
+				img.classList.add('my-5', 'rounded', 'border', 'border-gray-400', 'w-full');
+			}
+		}
+	}
+
+	onMount(() => {
+		addPaddingToElements();
+		addBorderToImages();
+	});
 </script>
 
 <svelte:head>
@@ -26,16 +54,9 @@
 		{/each}
 	</div>
 
-	<!-- Thumbnail -->
-	<img
-		alt="thumbnail"
-		src={project.thumbnail}
-		class="mt-10 rounded border border-gray-400 w-full"
-	/>
-
-	<div class="sm:px-10 mt-12 font-ibm">
+	<div class="mt-5 font-ibm">
 		<!-- Post -->
-		<div class="font-light hyphenate flex flex-col space-y-5">
+		<div class="font-light hyphenate flex flex-col space-y-5" id="post-container">
 			{@html marked(data.post)}
 		</div>
 		<!-- What I've done -->
