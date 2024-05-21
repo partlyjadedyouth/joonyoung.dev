@@ -1,4 +1,11 @@
 <script lang="ts">
+	/**
+	 * [/+page.svelte]
+	 * This component renders the main page, displaying the profile section and the latest projects.
+	 * It imports and uses ProfileContainer and ProjectContainer components.
+	 * The data for the projects is passed as a prop to this component.
+	 */
+
 	import ProfileContainer from '$lib/components/ProfileContainer.svelte';
 	import ProjectContainer from '$lib/components/ProjectContainer.svelte';
 
