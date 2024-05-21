@@ -1,60 +1,94 @@
 <script lang="ts">
+	// Importing the LinkContainer component from the specified path
 	import LinkContainer from '$lib/components/LinkContainer.svelte';
+
+	// Importing the 'marked' library for parsing markdown content
 	import { marked } from 'marked';
+
+	// Importing the 'onMount' lifecycle function from Svelte
 	import { onMount } from 'svelte';
 
+	// Declaring 'data' as a prop that will be passed to this component
 	export let data;
 
+	// Extracting the 'project' property from the 'data' object
 	const project = data.project;
 
+	// Function to add padding to child elements of the post container
 	function addPaddingToElements() {
+		// Getting the element with the ID 'post-container'
 		const container = document.getElementById('post-container');
 		if (container) {
+			// Getting all children of the container
 			const children = container.children;
+			// Looping through each child element
 			for (const child of children) {
+				// Checking if the first child element is not an image
 				if (!child.children[0] || child.children[0].tagName !== 'IMG') {
+					// Adding padding class to elements that are not images
 					child.classList.add('sm:px-10');
 				} else if (child.children[0] && child.children[0].tagName === 'IMG') {
+					// Adding specific classes to image elements
 					child.classList.add('py-5', 'flex', 'flex-col', 'items-center');
 				}
 			}
 		}
 	}
 
+	// Function to add borders to all images inside the post container
 	function addBorderToImages() {
+		// Getting the element with the ID 'post-container'
 		const postContainer = document.getElementById('post-container');
 		if (postContainer) {
+			// Getting all image elements within the post container
 			const images = postContainer.getElementsByTagName('img');
+			// Looping through each image element
 			for (let img of images) {
+				// Adding border and styling classes to the image
 				img.classList.add('rounded', 'border', 'border-gray-400', 'w-full');
 			}
 		}
 	}
 
+	// Function to add hover effects to all links inside the post container
 	function addHoverEffectToLinks() {
+		// Getting the element with the ID 'post-container'
 		const postContainer = document.getElementById('post-container');
 		if (postContainer) {
+			// Getting all anchor (link) elements within the post container
 			const links = postContainer.getElementsByTagName('a');
+			// Looping through each link element
 			for (let link of links) {
+				// Adding hover effect class to the link
 				link.classList.add('hover:underline');
 			}
 		}
 	}
 
+	// Function to center-align all image captions within the post container
 	function alignImageCaptionsCenter() {
+		// Getting the element with the ID 'post-container'
 		const postContainer = document.getElementById('post-container');
 		if (postContainer) {
+			// Getting all <em> elements (typically used for captions) within the post container
 			const captions = postContainer.getElementsByTagName('em');
+			// Looping through each caption element
 			for (let caption of captions) {
+				// Adding center alignment class to the caption
 				caption.classList.add('align-center');
 			}
 		}
 	}
 
+	// Using the 'onMount' lifecycle function to execute code after the component has been mounted
 	onMount(() => {
+		// Adding padding to elements after the component has been mounted
 		addPaddingToElements();
+		// Adding borders to images after the component has been mounted
 		addBorderToImages();
+		// Adding hover effects to links after the component has been mounted
 		addHoverEffectToLinks();
+		// Center-aligning image captions after the component has been mounted
 		alignImageCaptionsCenter();
 	});
 </script>
