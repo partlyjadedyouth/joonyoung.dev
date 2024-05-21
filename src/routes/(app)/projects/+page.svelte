@@ -1,6 +1,9 @@
 <script lang="ts">
-	import { projects } from '$lib/data/projects';
 	import ProjectContainer from '$lib/components/ProjectContainer.svelte';
+
+	export let data;
+
+	const projects = data.projects;
 </script>
 
 <svelte:head>

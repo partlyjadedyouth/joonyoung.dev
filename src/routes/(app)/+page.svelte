@@ -1,7 +1,10 @@
 <script lang="ts">
 	import ProfileContainer from '$lib/components/ProfileContainer.svelte';
 	import ProjectContainer from '$lib/components/ProjectContainer.svelte';
-	import { projects } from '$lib/data/projects';
+
+	export let data;
+
+	const projects = data.projects;
 </script>
 
 <svelte:head>

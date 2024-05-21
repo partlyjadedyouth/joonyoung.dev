@@ -4,7 +4,7 @@ import type { Project } from '$lib/utils/definitions';
 
 export async function load({ fetch }) {
 	const projects: Project[] = [];
-	for (const projectID of projectIDs.slice(0, 3)) {
+	for (const projectID of projectIDs) {
 		const markdown = await fetch(`/projects/${projectID}/index.md`);
 		const content = await markdown.text();
 		const project = parseFrontmatter(content);
