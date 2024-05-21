@@ -73,7 +73,7 @@ function parsePost(markdown: string): string {
 }
 
 export async function load({ params, fetch }) {
-	const markdown = await fetch(`/markdown/${params.slug}.md`);
+	const markdown = await fetch(`/projects/${params.slug}/index.md`);
 	const content = await markdown.text();
 	const project = parseFrontmatter(content);
 	const post = parsePost(content);

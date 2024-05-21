@@ -14,6 +14,8 @@
 			for (const child of children) {
 				if (!child.children[0] || child.children[0].tagName !== 'IMG') {
 					child.classList.add('sm:px-10');
+				} else if (child.children[0] && child.children[0].tagName === 'IMG') {
+					child.classList.add('py-5', 'flex', 'flex-col', 'items-center');
 				}
 			}
 		}
@@ -24,7 +26,27 @@
 		if (postContainer) {
 			const images = postContainer.getElementsByTagName('img');
 			for (let img of images) {
-				img.classList.add('my-5', 'rounded', 'border', 'border-gray-400', 'w-full');
+				img.classList.add('rounded', 'border', 'border-gray-400', 'w-full');
+			}
+		}
+	}
+
+	function addHoverEffectToLinks() {
+		const postContainer = document.getElementById('post-container');
+		if (postContainer) {
+			const links = postContainer.getElementsByTagName('a');
+			for (let link of links) {
+				link.classList.add('hover:underline');
+			}
+		}
+	}
+
+	function alignImageCaptionsCenter() {
+		const postContainer = document.getElementById('post-container');
+		if (postContainer) {
+			const captions = postContainer.getElementsByTagName('em');
+			for (let caption of captions) {
+				caption.classList.add('align-center');
 			}
 		}
 	}
@@ -32,6 +54,8 @@
 	onMount(() => {
 		addPaddingToElements();
 		addBorderToImages();
+		addHoverEffectToLinks();
+		alignImageCaptionsCenter();
 	});
 </script>
 
@@ -60,8 +84,10 @@
 			{@html marked(data.post)}
 		</div>
 		<!-- What I've done -->
-		<hr class="border-[0.5px] border-gray-500 w-full mt-12" />
-		<p class="mt-2 font-medium">What I've done...</p>
-		<p class="mt-1 text-sm font-light">{project.role}</p>
+		<div class="sm:mx-10">
+			<hr class="border-[0.5px] border-gray-500 w-full mt-12" />
+			<p class="mt-2 font-medium">What I've done...</p>
+			<p class="mt-1 text-sm font-light">{project.role}</p>
+		</div>
 	</div>
 </section>
