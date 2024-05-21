@@ -59,4 +59,4 @@ const snackTime: Project = {
 	links: [{ type: 'web', url: 'https://joonpart.itch.io/turtles-snacktime' }]
 };
 
-export const projects: Project[] = [wavin, snackTime, ischive, togetherBus];
+export const projects: Project[] = [wavin, snackTime, togetherBus, ischive];
