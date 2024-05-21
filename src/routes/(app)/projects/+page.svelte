@@ -1,4 +1,10 @@
 <script lang="ts">
+	/**
+	 * [/projects/+page.svelte]
+	 * This component renders a list of projects. It sets the page title and description,
+	 * and iterates over the projects data to display each project using the ProjectContainer component.
+	 */
+
 	// Importing the ProjectContainer component from the specified path
 	import ProjectContainer from '$lib/components/ProjectContainer.svelte';
 

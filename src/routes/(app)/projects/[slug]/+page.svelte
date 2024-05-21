@@ -1,4 +1,11 @@
 <script lang="ts">
+	/**
+	 * [/projects/[slug]/+page.svelte]
+	 * This component renders a project page, displaying the project details
+	 * including the title, year, links, post content, and the role of the author.
+	 * It applies various styles and effects to the elements once the component is mounted.
+	 */
+
 	// Importing the LinkContainer component from the specified path
 	import LinkContainer from '$lib/components/LinkContainer.svelte';
 

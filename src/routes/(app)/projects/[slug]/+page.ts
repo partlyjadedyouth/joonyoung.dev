@@ -1,3 +1,11 @@
+/**
+ * [/projects/[slug]/+page.ts]
+ * This module defines the load function to fetch and parse the markdown file
+ * for a specific project based on the route parameter (slug). It retrieves
+ * the project metadata and post content, and handles errors if the content
+ * is not found or fails to parse.
+ */
+
 // Importing the 'error' function from '@sveltejs/kit' for error handling
 import { error } from '@sveltejs/kit';
 
