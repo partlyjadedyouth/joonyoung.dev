@@ -1,8 +1,10 @@
 <script lang="ts">
 	import LinkContainer from '$lib/components/LinkContainer.svelte';
+	import { marked } from 'marked';
+
 	export let data;
 
-	const project = data.project[0];
+	const project = data.project;
 </script>
 
 <svelte:head>
@@ -33,7 +35,9 @@
 
 	<div class="sm:px-10 mt-12 font-ibm">
 		<!-- Post -->
-		<p class="font-light hyphenate">{@html project.post}</p>
+		<div class="font-light hyphenate flex flex-col space-y-5">
+			{@html marked(data.post)}
+		</div>
 		<!-- What I've done -->
 		<hr class="border-[0.5px] border-gray-500 w-full mt-12" />
 		<p class="mt-2 font-medium">What I've done...</p>
