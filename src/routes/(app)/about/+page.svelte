@@ -1,4 +1,10 @@
 <script>
+	/**
+	 * [/about/+page.svelte]
+	 * This component renders the About page, displaying personal information, contact details,
+	 * education background, work experience, awards, and proficiency in languages and tools.
+	 */
+
 	import email from '$lib/images/email.svg';
 	import browser from '$lib/images/browser.png';
 	import LinkContainer from '$lib/components/LinkContainer.svelte';
