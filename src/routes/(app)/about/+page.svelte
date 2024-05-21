@@ -16,25 +16,27 @@
 		<LinkContainer type="pdf" url="/pdfs/cv.pdf" />
 	</div>
 	<!-- Email -->
-	<a
-		href="mailto:jooony@snu.ac.kr"
-		target="_blank"
-		rel="noopener noreferrer"
-		class="flex items-center"
-	>
-		<img alt="email" src={email} class="w-5 mr-1 pt-1" />
-		<p class="font-ibm hover:font-medium hover:underline">jooony@snu.ac.kr</p>
-	</a>
+	<div class="flex items-center">
+		<a href="mailto:jooony@snu.ac.kr" target="_blank" rel="noopener noreferrer">
+			<img alt="email" src={email} class="w-5 mr-1 pt-1" />
+		</a>
+		<a href="mailto:jooony@snu.ac.kr" target="_blank" rel="noopener noreferrer">
+			<p class="font-ibm hover:font-medium hover:underline">jooony@snu.ac.kr</p>
+		</a>
+	</div>
 	<!-- Website -->
-	<a
-		href="https://joonyoung.dev"
-		target="_blank"
-		rel="noopener noreferrer"
-		class="flex items-center"
-	>
-		<img alt="Browser icons created by kmg design - Flaticon" src={browser} class="w-5 mr-1 pt-1" />
-		<p class="font-ibm hover:font-medium hover:underline">joonyoung.dev</p>
-	</a>
+	<div class="flex items-center">
+		<a href="https://joonyoung.dev" target="_blank" rel="noopener noreferrer">
+			<img
+				alt="Browser icons created by kmg design - Flaticon"
+				src={browser}
+				class="w-5 mr-1 pt-1"
+			/>
+		</a>
+		<a href="https://joonyoung.dev" target="_blank" rel="noopener noreferrer">
+			<p class="font-ibm hover:font-medium hover:underline">joonyoung.dev</p>
+		</a>
+	</div>
 </section>
 
 <!-- EDUCATION -->

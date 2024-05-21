@@ -11,7 +11,7 @@
 	<meta name="description" content="Joonyoung's Blog" />
 </svelte:head>
 
-<section class="py-10">
+<section class="py-20">
 	<h1 class="font-ibm font-medium text-2xl mb-5">PROJECTS</h1>
 
 	{#each projects as project}
