@@ -1,5 +1,4 @@
 import { error } from '@sveltejs/kit';
-import { projects } from '$lib/data/projects.js';
 import * as yaml from 'js-yaml';
 
 interface LinkDetails {
@@ -17,7 +16,7 @@ interface Project {
 	links: LinkDetails[];
 }
 
-function parseMarkdown(markdown: string) {
+function parseFrontmatter(markdown: string): Project | null {
 	// Regular expression to match the frontmatter block
 	const frontmatterRegex = /---\s*([\s\S]+?)\s*---/;
 	const match = markdown.match(frontmatterRegex);
@@ -62,12 +61,22 @@ function parseMarkdown(markdown: string) {
 	}
 }
 
-export async function load({ params, fetch }) {
-	const project = projects.filter((project) => project.id === params.slug)[0];
-	const markdown = await fetch(`/markdown/${params.slug}.md`);
-	const post = await markdown.text();
+function parsePost(markdown: string): string {
+	const frontmatterRegex = /---\s*([\s\S]+?)\s*---/;
+	const match = markdown.match(frontmatterRegex);
 
-	console.log(parseMarkdown(post));
+	if (!match) {
+		return markdown;
+	}
+
+	return markdown.slice(match[0].length);
+}
+
+export async function load({ params, fetch }) {
+	const markdown = await fetch(`/markdown/${params.slug}.md`);
+	const content = await markdown.text();
+	const project = parseFrontmatter(content);
+	const post = parsePost(content);
 
 	if (project && post) {
 		return { project, post };
