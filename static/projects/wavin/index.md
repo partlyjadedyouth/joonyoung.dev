@@ -4,7 +4,7 @@ year: '2024'
 title: 'Wavin: Lyrics Visualization in Mobile Music Streaming Services to Improve Music Comprehension for D/HH'
 description: ' '
 thumbnail: '/projects/wavin/wavin.png'
-role: 'Project leader'
+role: 'Project leader (Project planning, user research, design, paper writing)'
 links:
   [
     { type: 'pdf', url: '/projects/wavin/wavin_paper.pdf' },
