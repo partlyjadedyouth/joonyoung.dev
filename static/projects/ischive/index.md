@@ -17,3 +17,5 @@ I started this project with my colleagues and the official support of the depart
 After some migration in the tech stacks, the website finally started to be in use with the second semester's exhibition in 2024.
 
 ![me](/projects/ischive/me.jpeg)_Check out my courseworks😄 in ISCHIVE!_
+
+In the first semester of 2025, I recruited new team members to establish processes for the sustainable maintenance and handoff of the website.
