@@ -4,7 +4,7 @@ year: '2024'
 title: 'Together Bus'
 description: 'Designing a bus charter service for rural residents who have trouble getting to concerts in Seoul'
 thumbnail: '/projects/together-bus/together-bus.png'
-role: 'Product design, project planning'
+role: 'Product design, UX design, project planning'
 links: [{ type: 'pdf', url: '/projects/together-bus/together_bus.pdf' }]
 ---
 
@@ -14,7 +14,7 @@ In Korea, most concerts are held in Seoul, due to the high concentration of peop
 
 ![flow-chart](/projects/together-bus/together-bus-flow-chart.png)
 
-As a result, me and my colleagues designed **a bus charter service** to solve this problem. We conducted market research with **in-depth interviews**, designed **a prototype**, and established **a market entry strategy with revenue model.** Finally, we presented it through an in-class **IR deck**.
+As a result, my colleagues and I designed **a bus charter service** to solve this problem. We conducted market research with **in-depth interviews**, designed **a prototype**, and established **a market entry strategy including a revenue model.** Finally, we presented it through an in-class **IR(Investor Relations) deck**.
 
 ![journey-map](/projects/together-bus/journey-map.png)
 
