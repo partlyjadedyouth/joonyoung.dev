@@ -43,7 +43,7 @@
 	}
 
 	// Function to add borders to all images inside the post container
-	function addBorderToImages() {
+	function formatImages() {
 		// Getting the element with the ID 'post-container'
 		const postContainer = document.getElementById('post-container');
 		if (postContainer) {
@@ -52,7 +52,9 @@
 			// Looping through each image element
 			for (let img of images) {
 				// Adding border and styling classes to the image
-				img.classList.add('rounded', 'border', 'border-gray-400', 'w-full');
+				img.classList.add('rounded', 'border', 'border-gray-400', 'w-full', 'cursor-pointer');
+				// Adding event listener to handle image click for fullscreen view
+				img.addEventListener('click', handleImageClick);
 			}
 		}
 	}
@@ -87,16 +89,57 @@
 		}
 	}
 
+	// Function to handle image click for fullscreen view
+	function handleImageClick(event: MouseEvent) {
+		// Cast the event target to an HTMLImageElement to access the clicked image's properties
+		const img = event.target as HTMLImageElement;
+
+		// Create a new div element to act as the fullscreen container
+		const fullscreenContainer = document.createElement('div');
+		fullscreenContainer.id = 'fullscreen-container';
+
+		// Add necessary classes to the fullscreen container for styling
+		fullscreenContainer.classList.add(
+			'fixed', // Position the container fixed relative to the viewport
+			'inset-0', // Make the container cover the entire viewport
+			'bg-black', // Set the background color to black
+			'bg-opacity-75', // Make the background slightly transparent (75% opacity)
+			'flex', // Use flexbox for centering the image
+			'items-center', // Center items vertically
+			'justify-center', // Center items horizontally
+			'z-50', // Ensure the container appears on top of other content
+			'p-10' // Add padding to the container
+		);
+
+		// Create a new image element for displaying the clicked image in fullscreen
+		const fullscreenImage = document.createElement('img');
+		fullscreenImage.src = img.src; // Set the source of the fullscreen image to the clicked image's source
+		fullscreenImage.classList.add('max-w-full', 'max-h-full'); // Ensure the image scales appropriately
+
+		// Append the fullscreen image to the fullscreen container
+		fullscreenContainer.appendChild(fullscreenImage);
+
+		// Append the fullscreen container to the body, making it visible
+		document.body.appendChild(fullscreenContainer);
+
+		// Add an event listener to the fullscreen container to handle click events
+		fullscreenContainer.addEventListener('click', () => {
+			// Remove the fullscreen container from the body when clicked, effectively closing the fullscreen view
+			document.body.removeChild(fullscreenContainer);
+		});
+	}
+
 	// Using the 'onMount' lifecycle function to execute code after the component has been mounted
 	onMount(() => {
 		// Adding padding to elements after the component has been mounted
 		addPaddingToElements();
 		// Adding borders to images after the component has been mounted
-		addBorderToImages();
+		formatImages();
 		// Adding hover effects to links after the component has been mounted
 		addHoverEffectToLinks();
 		// Center-aligning image captions after the component has been mounted
 		alignImageCaptionsCenter();
+		//
 	});
 </script>
 
