@@ -4,7 +4,7 @@ year: '2023-2024'
 title: 'ISCHIVE.com'
 description: 'A website that archives coursework submitted by Dept. of Information Science students'
 thumbnail: '/projects/ischive/ischive.jpeg'
-role: 'Project leader(1st semester of 2024), web development, service design, website maintenance'
+role: 'Project leader(2024-1), web development, service design, website maintenance'
 links: [{ type: 'web', url: 'https://ischive.com' }]
 ---
 
@@ -21,3 +21,5 @@ After some migration in the tech stacks, the website finally launched for the se
 ![me](/projects/ischive/me.jpeg)_Check out my coursework😄 in ISCHIVE!_
 
 In the first semester of 2024, I recruited new team members to establish sustainable maintenance and handoff processes for the website.
+
+Through this project, I learned **how to develop a fully functional website.** It was also my first time working with a large team on web development, which allowed me to get familiar with **various collaboration tools like Git and Slack.** In the first semester of 2024, **I took on the role of project leader, gaining valuable experience in managing the project and leading the team.**
