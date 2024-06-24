@@ -18,4 +18,6 @@ As a result, my colleagues and I designed **a bus charter service** to solve thi
 
 ![journey-map](/projects/together-bus/journey-map.png)
 
+Through this project, I was able to experience the entire **'Double Diamond Process'** of user-centered design, which involves discovering and defining problem situations, developing solutions, and delivering them to users. I also learned how to apply **various UX design methodologies to real products.** Additionally, IR deck allowed me to have the new experience of pitching our product to investors.
+
 This design work was submitted as coursework for **User-Centered Design** course at Dept. of Information Science, Seoul National University.
