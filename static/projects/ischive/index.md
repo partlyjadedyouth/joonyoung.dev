@@ -20,4 +20,4 @@ After some migration in the tech stacks, the website finally launched for the se
 
 ![me](/projects/ischive/me.jpeg)_Check out my coursework😄 in ISCHIVE!_
 
-In the first semester of 2025, I recruited new team members to establish sustainable maintenance and handoff processes for the website.
+In the first semester of 2024, I recruited new team members to establish sustainable maintenance and handoff processes for the website.
