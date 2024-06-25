@@ -93,23 +93,9 @@
 
 <!-- PROFICIENCY -->
 <section class="mt-10 font-ibm">
-	<h1 class="text-2xl font-medium">PROFICIENCY</h1>
+	<h1 class="text-2xl font-medium">KEY STRENGTHS</h1>
 
-	<h2 class="mt-2 text-lg font-medium">Languages</h2>
-	<div class="mt-1 font-light">
-		<b>Korean (Native):</b> Full professional proficiency in reading, writing, speaking, and comprehension
-	</div>
-	<div class="font-light">
-		<b>English (Fluent):</b> High proficiency in reading, writing, speaking, and comprehension.
-		Comfortable in professional and social contexts.
-		<b>TEPS 455/600 (2024)</b>
-	</div>
-	<div class="font-light">
-		<b>Japanese (Elementary):</b> Basic communication skills for everyday use. Able to understand and
-		use elementary phrases and sentences
-	</div>
-
-	<h2 class="mt-3 text-lg font-medium">Programming & Design</h2>
+	<h2 class="mt-3 text-lg font-medium">Programming</h2>
 	<div class="mt-1 font-light">
 		<b>Languages:</b> Python, C/C++, JavaScript/TypeScript, HTML & CSS, Dart, C#
 	</div>
@@ -119,6 +105,14 @@
 	</div>
 	<div class="font-light">
 		<b>Others:</b> Git, LaTeX, Figma
+	</div>
+
+	<h2 class="mt-2 text-lg font-medium">Multilingual Skills</h2>
+	<div class="mt-1 font-light">
+		<b>Korean:</b> native language
+	</div>
+	<div class="font-light">
+		<b>English:</b> TEPS 455 (near-native level of communicative competence)
 	</div>
 </section>
 
