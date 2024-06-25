@@ -2,7 +2,7 @@
 id: 'wavin'
 year: '2024'
 title: 'Wavin: Lyrics Visualization in Mobile Music Streaming Services to Improve Music Comprehension for D/HH'
-description: ' '
+description: 'Conducted HCI research to enhance the usability of a mobile music streaming app for Deaf and Hard of Hearing users.'
 thumbnail: '/projects/wavin/wavin.png'
 role: 'Project leader (Project planning, user research, design, paper writing)'
 links:

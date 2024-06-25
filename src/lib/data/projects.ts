@@ -1,1 +1,1 @@
-export const projectIDs = ['wavin', 'snack-time', 'together-bus', 'ischive'];
+export const projectIDs = ['note-n-rest', 'wavin', 'snack-time', 'together-bus', 'ischive'];
