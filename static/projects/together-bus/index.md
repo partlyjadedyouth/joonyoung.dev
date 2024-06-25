@@ -2,7 +2,7 @@
 id: 'together-bus'
 year: '2024'
 title: 'Together Bus'
-description: 'Designing a bus charter service for rural residents who have trouble getting to concerts in Seoul'
+description: 'Designed a bus charter service for rural residents who have trouble getting to concerts in Seoul'
 thumbnail: '/projects/together-bus/together-bus.png'
 role: 'Product design, UX design, project planning'
 links: [{ type: 'pdf', url: '/projects/together-bus/together_bus.pdf' }]

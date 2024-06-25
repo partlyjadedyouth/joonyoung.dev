@@ -2,7 +2,7 @@
 id: 'snack-time'
 year: '2024'
 title: "Turtle's Snack Time"
-description: 'A 2D game that simulates the life of a turtle in the ocean'
+description: 'Developed a serious game that simulates the life of a turtle in the ocean'
 thumbnail: '/projects/snack-time/snack-time.png'
 role: 'Game design, game development'
 links: [{ type: 'web', url: 'https://joonpart.itch.io/turtles-snacktime' }]
