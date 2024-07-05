@@ -4,7 +4,7 @@ year: '2024'
 title: 'Note & Rest'
 description: 'Designed an AI solution to help users take care of mental well-being by extracting emotions through human-AI interaction and generate diaries and music.'
 thumbnail: '/projects/note-n-rest/thumbnail.png'
-role: 'Service design'
+role: 'Service design, UI/UX design'
 links:
   [
     { type: 'pdf', url: '/projects/note-n-rest/nnr_slides.pdf' },

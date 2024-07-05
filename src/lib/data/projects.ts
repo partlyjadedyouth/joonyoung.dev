@@ -1,1 +1,8 @@
-export const projectIDs = ['note-n-rest', 'wavin', 'snack-time', 'together-bus', 'ischive'];
+export const projectIDs = [
+	'note-n-rest',
+	'escape-anywhere',
+	'wavin',
+	'snack-time',
+	'together-bus',
+	'ischive'
+];
