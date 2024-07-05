@@ -26,10 +26,10 @@ export async function load({ params, fetch }) {
 	// Checking if both project metadata and post content are successfully parsed
 	if (project && post) {
 		// Returning the parsed project metadata and post content
-		console.log({
-			project: project,
-			post: post
-		});
+		// console.log({
+		// 	project: project,
+		// 	post: post
+		// });
 		return { project, post };
 	} else {
 		// Throwing a 404 error if the project or post is not found or failed to parse
