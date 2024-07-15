@@ -8,9 +8,7 @@
 
 	// Importing the LinkContainer component from the specified path
 	import LinkContainer from '$lib/components/LinkContainer.svelte';
-
-	// Importing the 'marked' library for parsing markdown content
-	import { marked } from 'marked';
+	import type { Project } from '$lib/utils/definitions.js';
 
 	// Importing the 'onMount' lifecycle function from Svelte
 	import { onMount } from 'svelte';
@@ -19,7 +17,9 @@
 	export let data;
 
 	// Extracting the 'project' property from the 'data' object
-	const project = data.project;
+	const project = data.project as any;
+
+	console.log(project);
 
 	// Function to add padding to child elements of the post container
 	function addPaddingToElements() {
@@ -139,7 +139,6 @@
 		addHoverEffectToLinks();
 		// Center-aligning image captions after the component has been mounted
 		alignImageCaptionsCenter();
-		//
 	});
 </script>
 
@@ -165,7 +164,7 @@
 	<div class="mt-5 font-ibm">
 		<!-- Post -->
 		<div class="font-light hyphenate flex flex-col space-y-5" id="post-container">
-			{@html marked(data.post)}
+			{@html project.content}
 		</div>
 		<!-- What I've done -->
 		<div class="sm:mx-10">
