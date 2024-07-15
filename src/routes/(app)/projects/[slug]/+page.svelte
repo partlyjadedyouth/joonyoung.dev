@@ -19,8 +19,6 @@
 	// Extracting the 'project' property from the 'data' object
 	const project = data.project as any;
 
-	console.log(project);
-
 	// Function to add padding to child elements of the post container
 	function addPaddingToElements() {
 		// Getting the element with the ID 'post-container'
