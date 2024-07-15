@@ -16,7 +16,7 @@ export async function load({ fetch }) {
 	// Looping through the first three projectIDs in the projectIDs array
 	for (const projectID of projectIDs.slice(0, 3)) {
 		// Fetching the markdown file for the current projectID
-		const markdown = await fetch(`/projects/${projectID}/index.md`);
+		const markdown = await fetch(`/projectAssets/${projectID}/index.md`);
 		// Reading the content of the fetched markdown file as text
 		const content = await markdown.text();
 		// Parsing the frontmatter (metadata) from the markdown content
