@@ -46,7 +46,7 @@ export function parseFrontmatter(markdown: string): Project | null {
 	}
 }
 
-export function parsePost(markdown: string): string {
+export function parsePost(markdown: string): string | null {
 	const frontmatterRegex = /---\s*([\s\S]+?)\s*---/;
 	const match = markdown.match(frontmatterRegex);
 

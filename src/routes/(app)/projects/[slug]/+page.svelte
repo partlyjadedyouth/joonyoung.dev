@@ -19,7 +19,7 @@
 	export let data;
 
 	// Extracting the 'project' property from the 'data' object
-	const project = data.project;
+	const { project, parsedContent } = data;
 
 	// Function to add padding to child elements of the post container
 	function addPaddingToElements() {
@@ -165,7 +165,7 @@
 	<div class="mt-5 font-ibm">
 		<!-- Post -->
 		<div class="font-light hyphenate flex flex-col space-y-5" id="post-container">
-			{@html marked(data.post)}
+			{@html parsedContent}
 		</div>
 		<!-- What I've done -->
 		<div class="sm:mx-10">
