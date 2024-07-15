@@ -8,7 +8,6 @@
 
 	// Importing the LinkContainer component from the specified path
 	import LinkContainer from '$lib/components/LinkContainer.svelte';
-	import type { Project } from '$lib/utils/definitions.js';
 
 	// Importing the 'onMount' lifecycle function from Svelte
 	import { onMount } from 'svelte';
