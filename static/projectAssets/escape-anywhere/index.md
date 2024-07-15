@@ -3,7 +3,7 @@ id: 'escape-anywhere'
 year: '2024'
 title: 'Escape Anywhere'
 description: 'Developed an escape room game that constantly provides new themes and puzzles using generative AI'
-thumbnail: '/projects/escape-anywhere/escape-anywhere.png'
+thumbnail: '/projectAssets/escape-anywhere/escape-anywhere.png'
 role: 'Web development, prompt engineering'
 links:
   [

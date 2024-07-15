@@ -1,26 +1,45 @@
 import { error } from '@sveltejs/kit';
-import fs from 'fs';
-import path from 'path';
-import matter from 'gray-matter';
 import { marked } from 'marked';
+import { parseFrontmatter, parsePost } from '$lib/utils/parse-md';
+import type { Project } from '$lib/utils/definitions';
+
+const projectFiles = import.meta.glob('/static/projectAssets/**/index.md', {
+	eager: true,
+	as: 'raw'
+});
 
 export async function load({ params }) {
 	const { slug } = params;
-	const projectsDirectory = path.join(process.cwd(), 'static', 'projects');
-	const fullPath = path.join(projectsDirectory, slug, 'index.md');
+	const matchingFile = Object.entries(projectFiles).find(([path]) =>
+		path.includes(`/static/projectAssets/${slug}/`)
+	);
 
-	try {
-		const fileContents = fs.readFileSync(fullPath, 'utf8');
-		const { data, content } = matter(fileContents);
-		const htmlContent = marked(content);
-
-		return {
-			project: {
-				...data,
-				content: htmlContent
-			}
-		};
-	} catch (err) {
+	if (!matchingFile) {
 		throw error(404, `Project not found`);
 	}
+
+	const [, content] = matchingFile;
+
+	const projectData = parseFrontmatter(content);
+	if (!projectData) {
+		throw error(500, `Failed to parse project data`);
+	}
+
+	const markdown = parsePost(content);
+	const htmlContent = marked(markdown.trim());
+
+	// Adjust the thumbnail path
+	const adjustedProjectData = {
+		...projectData,
+		thumbnail: projectData.thumbnail.startsWith('/')
+			? `/projectAssets${projectData.thumbnail}`
+			: `/projectAssets/${projectData.thumbnail}`
+	};
+
+	return {
+		project: {
+			...adjustedProjectData,
+			content: htmlContent
+		} as Project & { content: string }
+	};
 }
