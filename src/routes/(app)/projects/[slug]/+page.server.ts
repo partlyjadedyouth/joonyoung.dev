@@ -5,7 +5,8 @@ import type { Project } from '$lib/utils/definitions';
 
 const projectFiles = import.meta.glob('/static/projectAssets/**/index.md', {
 	eager: true,
-	as: 'raw'
+	query: '?raw',
+	import: 'default'
 });
 
 export async function load({ params }) {
@@ -20,12 +21,12 @@ export async function load({ params }) {
 
 	const [, content] = matchingFile;
 
-	const projectData = parseFrontmatter(content);
+	const projectData = parseFrontmatter(content as string);
 	if (!projectData) {
 		throw error(500, `Failed to parse project data`);
 	}
 
-	const markdown = parsePost(content);
+	const markdown = parsePost(content as string);
 	const htmlContent = marked(markdown.trim());
 
 	// Adjust the thumbnail path
