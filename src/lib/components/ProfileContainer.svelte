@@ -65,13 +65,13 @@
 		</a>
 	</p>
 	<p class="mb-3">
-		I want to contribute to creating a society where marginalized people can express themselves,
-		communicate freely with others, and learn through technology.
+		I want to contribute to creating a more inclusive society where marginalized people can express
+		themselves, communicate freely with others, and learn through technology.
 	</p>
 	<p>
 		My research interests lie at the intersection of Human-Computer Interaction (HCI), Human-AI
 		Interaction (HAI), and AI-mediated communication. Specifically, I want to explore the potential
 		of LLMs to improve learning for people with disabilities, by facilitating communication between
-		people with disabilities and those without
+		people with disabilities and those without.
 	</p>
 </div>
