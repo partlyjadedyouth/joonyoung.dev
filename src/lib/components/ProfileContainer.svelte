@@ -40,17 +40,41 @@
 <!-- Self-introduction -->
 <div class="flex flex-col font-ibm font-light text-md hyphenate">
 	<p class="mb-3">
-		I am an aspiring HCI researcher and undergraduate student in
+		I am an HCI researcher and Master's student in the
 		<a
-			href="https://snu.ac.kr"
+			href="https://id.kaist.ac.kr"
 			target="_blank"
 			rel="noopener noreferrer"
 			class="font-medium hover:underline"
 		>
-			Seoul National University.
+			Department of Industrial Design
 		</a>
-
-		I am majoring in
+		at
+		<a
+			href="https://kaist.ac.kr"
+			target="_blank"
+			rel="noopener noreferrer"
+			class="font-medium hover:underline inline-block"
+		>
+			KAIST
+		</a>, where I am working with
+		<a
+			href="https://galaxytourist.notion.site/Hwajung-Hong-cc10b0291bbe4ca38dbf4882cd687423"
+			target="_blank"
+			rel="noopener noreferrer"
+			class="font-medium hover:underline"
+		>
+			Prof. Hwajung Hong
+		</a>
+		at the
+		<a
+			href="https://dxd-lab.github.io/#/"
+			target="_blank"
+			rel="noopener noreferrer"
+			class="font-medium hover:underline inline-block"
+		>
+			DxD Lab
+		</a>. Previously, I received a B.S. in
 		<a
 			href="https://ece.snu.ac.kr"
 			target="_blank"
@@ -59,15 +83,24 @@
 		>
 			Electrical & Computer Engineering
 		</a>
-		and
+		and a B.A. in
 		<a
 			href="https://isc.snu.ac.kr"
 			target="_blank"
 			rel="noopener noreferrer"
 			class="font-medium hover:underline"
 		>
-			Information Science.
+			Information Science
 		</a>
+		from
+		<a
+			href="https://snu.ac.kr"
+			target="_blank"
+			rel="noopener noreferrer"
+			class="font-medium hover:underline inline-block"
+		>
+			Seoul National University
+		</a>.
 	</p>
 	<p class="mb-3">
 		I want to contribute to creating a more inclusive society where marginalized people can express
