@@ -74,7 +74,20 @@
 			class="font-medium hover:underline inline-block"
 		>
 			DxD Lab
-		</a>. Prior to my graduate studies, I received a B.S. in
+		</a>.
+	</p>
+	<p class="mb-3">
+		I want to contribute to creating a more inclusive society where marginalized people can express
+		themselves, communicate freely with others, and learn through technology.
+	</p>
+	<p class="mb-3">
+		My research interests lie at the intersection of Human-Computer Interaction (HCI), Human-AI
+		Interaction (HAI), and AI-mediated communication. Specifically, I want to explore the potential
+		of LLMs to improve learning for people with disabilities, by facilitating communication between
+		people with disabilities and those without.
+	</p>
+	<p>
+		Prior to my graduate studies, I received a B.S. in
 		<a
 			href="https://ece.snu.ac.kr"
 			target="_blank"
@@ -101,15 +114,5 @@
 		>
 			Seoul National University
 		</a>.
-	</p>
-	<p class="mb-3">
-		I want to contribute to creating a more inclusive society where marginalized people can express
-		themselves, communicate freely with others, and learn through technology.
-	</p>
-	<p>
-		My research interests lie at the intersection of Human-Computer Interaction (HCI), Human-AI
-		Interaction (HAI), and AI-mediated communication. Specifically, I want to explore the potential
-		of LLMs to improve learning for people with disabilities, by facilitating communication between
-		people with disabilities and those without.
 	</p>
 </div>
