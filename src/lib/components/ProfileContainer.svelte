@@ -38,7 +38,7 @@
 </div>
 
 <!-- Self-introduction -->
-<div class="flex flex-col font-ibm font-light text-md hyphenate">
+<div class="flex flex-col font-ibm font-light text-md">
 	<p class="mb-3">
 		I am an HCI researcher and Master's student in the
 		<a
@@ -68,13 +68,13 @@
 		</a>
 		at the
 		<a
-			href="https://dxd-lab.github.io/#/"
+			href="https://dxd-lab.github.io"
 			target="_blank"
 			rel="noopener noreferrer"
 			class="font-medium hover:underline inline-block"
 		>
 			DxD Lab
-		</a>. Previously, I received a B.S. in
+		</a>. Prior to my graduate studies, I received a B.S. in
 		<a
 			href="https://ece.snu.ac.kr"
 			target="_blank"
