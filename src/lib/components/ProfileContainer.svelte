@@ -14,7 +14,12 @@
 	<!-- Social Buttons -->
 	<div class="flex">
 		<!-- mail -->
-		<a href="mailto:jooony@snu.ac.kr" target="_blank" rel="noopener noreferrer" class="w-6 mr-2">
+		<a
+			href="mailto:joonyoung@kaist.ac.kr"
+			target="_blank"
+			rel="noopener noreferrer"
+			class="w-6 mr-2"
+		>
 			<img alt="email" src={email} />
 		</a>
 		<!-- github -->

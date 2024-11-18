@@ -23,11 +23,11 @@
 	</div>
 	<!-- Email -->
 	<div class="flex items-center">
-		<a href="mailto:jooony@snu.ac.kr" target="_blank" rel="noopener noreferrer">
+		<a href="mailto:joonyoung@kaist.ac.kr" target="_blank" rel="noopener noreferrer">
 			<img alt="email" src={email} class="w-5 mr-1 pt-1" />
 		</a>
-		<a href="mailto:jooony@snu.ac.kr" target="_blank" rel="noopener noreferrer">
-			<p class="font-ibm hover:font-medium hover:underline">jooony@snu.ac.kr</p>
+		<a href="mailto:joonyoung@kaist.ac.kr" target="_blank" rel="noopener noreferrer">
+			<p class="font-ibm hover:font-medium hover:underline">joonyoung@kaist.ac.kr</p>
 		</a>
 	</div>
 	<!-- Website -->
