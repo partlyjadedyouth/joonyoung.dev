@@ -48,7 +48,13 @@
 <!-- EDUCATION -->
 <section class="mt-10 font-ibm">
 	<h1 class="text-2xl font-medium">EDUCATION</h1>
-
+	<!-- KAIST -->
+	<div class="mt-2">
+		<b class="font-medium">KAIST</b>, Daejeon, Republic of Korea
+	</div>
+	<div class="font-light">M.S., Industrial Design</div>
+	<div class="font-extralight">Mar 2025 - Present</div>
+	<!-- SNU -->
 	<div class="mt-2">
 		<b class="font-medium">Seoul National University</b>, Seoul, Republic of Korea
 	</div>
@@ -56,7 +62,7 @@
 		B.S., Electrical and Computer Engineering<br />
 		B.A., Information Science
 	</div>
-	<div class="font-extralight">Mar 2017 - Feb 2025 (Expected) *</div>
+	<div class="font-extralight">Mar 2017 - Feb 2025 *</div>
 	<div class="font-extralight">
 		* includes a 2-year mandatory military service in Republic of Korea
 	</div>
@@ -72,7 +78,7 @@
 		</a> Seoul National University
 	</div>
 	<div class="font-light">Undergraduate Research Intern</div>
-	<div class="font-extralight">Jan 2024 - Present</div>
+	<div class="font-extralight">Jan 2024 - Dec 2024</div>
 
 	<div class="mt-3">
 		<b class="font-medium">Samsung Electro-Mechanics</b>, Suwon, Republic of Korea
@@ -89,31 +95,6 @@
 		<b class="font-medium">10% Merit-Based Scholarship</b>, Seoul National University
 	</div>
 	<div class="font-extralight">Feb 2017</div>
-</section>
-
-<!-- PROFICIENCY -->
-<section class="mt-10 font-ibm">
-	<h1 class="text-2xl font-medium">KEY STRENGTHS</h1>
-
-	<h2 class="mt-3 text-lg font-medium">Programming</h2>
-	<div class="mt-1 font-light">
-		<b>Languages:</b> Python, C/C++, JavaScript/TypeScript, HTML & CSS, Dart, C#
-	</div>
-	<div class="font-light">
-		<b>Tools & Frameworks:</b> Node.js, React/Next.js, Svelte/SvelteKit, p5.js, Flutter, TailwindCSS,
-		NumPy, Pandas, Unity
-	</div>
-	<div class="font-light">
-		<b>Others:</b> Git, LaTeX, Figma
-	</div>
-
-	<h2 class="mt-2 text-lg font-medium">Multilingual Skills</h2>
-	<div class="mt-1 font-light">
-		<b>Korean:</b> native language
-	</div>
-	<div class="font-light">
-		<b>English:</b> TEPS 455 (near-native level of communicative competence)
-	</div>
 </section>
 
 <section class="pb-20"></section>
