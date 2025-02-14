@@ -53,7 +53,8 @@
 		<b class="font-medium">KAIST</b>, Daejeon, Republic of Korea
 	</div>
 	<div class="font-light">M.S., Industrial Design</div>
-	<div class="font-extralight">Mar 2025 - Present</div>
+	<div class="font-light text-sm">Advisor: Hwajung Hong</div>
+	<div class="font-extralight text-sm">Mar 2025 - Present</div>
 	<!-- SNU -->
 	<div class="mt-2">
 		<b class="font-medium">Seoul National University</b>, Seoul, Republic of Korea
@@ -62,8 +63,8 @@
 		B.S., Electrical and Computer Engineering<br />
 		B.A., Information Science
 	</div>
-	<div class="font-extralight">Mar 2017 - Feb 2025 *</div>
-	<div class="font-extralight">
+	<div class="font-extralight text-sm">Mar 2017 - Feb 2025 *</div>
+	<div class="font-extralight text-sm">
 		* includes a 2-year mandatory military service in Republic of Korea
 	</div>
 </section>
@@ -78,13 +79,14 @@
 		</a> Seoul National University
 	</div>
 	<div class="font-light">Undergraduate Research Intern</div>
-	<div class="font-extralight">Jan 2024 - Dec 2024</div>
+	<div class="font-light text-sm">Advisor: Hajin Lim</div>
+	<div class="font-extralight text-sm">Jan 2024 - Dec 2024</div>
 
 	<div class="mt-3">
 		<b class="font-medium">Samsung Electro-Mechanics</b>, Suwon, Republic of Korea
 	</div>
 	<div class="font-light">Undergraduate Intern</div>
-	<div class="font-extralight">Jul 2019 - Aug 2019</div>
+	<div class="font-extralight text-sm">Jul 2019 - Aug 2019</div>
 </section>
 
 <!-- AWARDS & HONORS -->
