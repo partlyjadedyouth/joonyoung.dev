@@ -129,7 +129,7 @@
 	<meta name="description" content="Joonyoung's Blog" />
 </svelte:head>
 
-<section class="flex flex-col items-center py-20" key={project.id}>
+<section class="flex flex-col items-center py-20">
 	<!-- Title -->
 	<p class="font-biryani font-semibold text-3xl text-center">{project.title}</p>
 
