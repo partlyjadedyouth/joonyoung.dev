@@ -69,6 +69,20 @@
 	</div>
 </section>
 
+<!-- PUBLICATIONS -->
+<section class="mt-10 font-ibm">
+	<h1 class="text-2xl font-medium">PUBLICATIONS</h1>
+
+	<div class="mt-2">
+		NoRe: Augmenting Journaling Experience with Generative AI for Music Creation
+	</div>
+	<div class="font-light text-sm">
+		<u><b>Joonyoung Park</b></u>*, Yeeun Lee*, Hyewon Cho*, Hyehyun Chu*, Jiin Cheon*, Jinsu Eun,
+		Hajin Lim
+		<div>Proceedings of HCI Korea 2025</div>
+	</div>
+</section>
+
 <!-- EXPERIENCE -->
 <section class="mt-10 font-ibm">
 	<h1 class="text-2xl font-medium">RESEARCH & WORK EXPERIENCE</h1>
