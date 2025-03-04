@@ -5,12 +5,7 @@ title: 'NoRe: Augmenting Journaling Experience with Generative AI for Music Crea
 description: "Developed NoRe, a system that augments traditional journaling with AI-generated personalized music to enhance emotional expression, regulation, and self-reflection by transforming users' written journal entries into emotionally resonant musical compositions."
 thumbnail: '/projectAssets/nore/NoRe_Write.jpeg'
 role: 'Project leader (Project planning, user research, developing, paper writing)'
-links:
-  [
-    { type: 'pdf', url: '/projectAssets/note-n-rest/nnr_slides.pdf' },
-    { type: 'poster', url: '/projectAssets/note-n-rest/nnr_poster.pdf' },
-    { type: 'web', url: 'https://0804cji.wixsite.com/notenrest' }
-  ]
+links: [{ type: 'pdf', url: '/pdfs/hci25_nore.pdf' }]
 ---
 
 ![pipeline](/projectAssets/nore/Fig_prompt_pipeline.png)
