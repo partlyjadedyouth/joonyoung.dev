@@ -54,7 +54,7 @@
 	</div>
 	<div class="font-light">M.S., Industrial Design</div>
 	<div class="font-light text-sm">Advisor: Hwajung Hong</div>
-	<div class="font-extralight text-sm">Mar 2025 - Present</div>
+	<div class="font-extralight text-sm">Feb 2025 - Present</div>
 	<!-- SNU -->
 	<div class="mt-2">
 		<b class="font-medium">Seoul National University</b>, Seoul, Republic of Korea
