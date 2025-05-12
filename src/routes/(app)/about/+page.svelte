@@ -77,6 +77,12 @@
 		NoRe: Augmenting Journaling Experience with Generative AI for Music Creation
 	</div>
 	<div class="font-light text-sm">
+		<u><b>Joonyoung Park</b></u>*, Hyewon Cho*, Hyehyun Chu*, Yeeun Lee, Hajin Lim
+		<div>DIS 2025</div>
+	</div>
+
+	<div class="mt-2">NoRe: 일기 기반 AI 음악 생성 앱을 위한 디자인 제언</div>
+	<div class="font-light text-sm">
 		<u><b>Joonyoung Park</b></u>*, Yeeun Lee*, Hyewon Cho*, Hyehyun Chu*, Jiin Cheon*, Jinsu Eun,
 		Hajin Lim
 		<div>Proceedings of HCI Korea 2025</div>

@@ -22,4 +22,4 @@ Based on this formative study, the research team developed **'NoRe' (Note & Rest
 
 Through this research, we confirmed **the potential of AI-generated music to extend the therapeutic effects of journaling.** However, **challenges such as music customization and privacy protection were also identified.**
 
-The formative study was published in **[Proceedings of HCI Korea 2025](https://conference.hcikorea.org/pds/2025/HCI2025_Proceedings_s.pdf),** and the in-the-wild study is currently under review.
+The formative study was published in **[Proceedings of HCI Korea 2025](https://conference.hcikorea.org/pds/2025/HCI2025_Proceedings_s.pdf),** and a full-paper including the whole study process will be published in **[DIS 2025](https://dis.acm.org/2025/).**
