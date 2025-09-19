@@ -7,6 +7,7 @@
 
 	import email from '$lib/images/email.svg';
 	import browser from '$lib/images/browser.png';
+	import linkedin from '$lib/images/linkedin.png';
 	import LinkContainer from '$lib/components/LinkContainer.svelte';
 </script>
 
@@ -43,6 +44,23 @@
 			<p class="font-ibm hover:font-medium hover:underline">joonyoung.dev</p>
 		</a>
 	</div>
+	<!-- LinkedIn -->
+	<div class="flex items-center">
+		<a
+			href="https://www.linkedin.com/in/joonyoung-park-487136185"
+			target="_blank"
+			rel="noopener noreferrer"
+		>
+			<img alt="LinkedIn" src={linkedin} class="w-5 mr-1" />
+		</a>
+		<a
+			href="https://www.linkedin.com/in/joonyoung-park-487136185"
+			target="_blank"
+			rel="noopener noreferrer"
+		>
+			<p class="font-ibm hover:font-medium hover:underline">Joonyoung Park</p>
+		</a>
+	</div>
 </section>
 
 <!-- EDUCATION -->
@@ -61,7 +79,7 @@
 	</div>
 	<div class="font-light">
 		B.S., Electrical and Computer Engineering<br />
-		B.A., Information Science
+		B.A., Information Science and Culture Studies
 	</div>
 	<div class="font-extralight text-sm">Mar 2017 - Feb 2025 *</div>
 	<div class="font-extralight text-sm">

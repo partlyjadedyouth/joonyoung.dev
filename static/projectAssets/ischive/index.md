@@ -10,7 +10,7 @@ links: [{ type: 'web', url: 'https://ischive.com' }]
 
 ![thumbnail](/projectAssets/ischive/ischive.jpeg)
 
-**[ISCHIVE](https://ischive.com)**, which is a combination of **ISC (Information Science & Culture)** and **Archive**, is a website designed to archive the coursework submitted by students in the Dept. of Information Science, Seoul National University. It also works as a digital brochure of **assignment exhibition**, which is the department's largest event.
+**[ISCHIVE](https://ischive.com)**, which is a combination of **ISC (Information Science & Culture)** and **Archive**, is a website designed to archive the coursework submitted by students in the Dept. of Information Science and Culture Studies, Seoul National University. It also works as a digital brochure of **assignment exhibition**, which is the department's largest event.
 
 **Now, ISCHIVE has become a major platform for students and faculty within and outside of SNU to get to know the department.**
 

@@ -24,4 +24,4 @@ In this study, we conducted **in-depth interviews with D/HH** to find out the pr
 
 Through this project, I learned about **human-centered design methodologies** like the Double Diamond, as well as **various qualitative research methods** such as interview coding, and how to apply them to academic research. I also discovered the appeal of HCI in bringing together my diverse interests in music, computing, and accessibility. **This experience was a pivotal moment for me**, solidifying my dream of becoming an HCI researcher.
 
-This design work was submitted as coursework for **Human-Computer Interaction** course at Dept. of Information Science, Seoul National University.
+This design work was submitted as coursework for **Human-Computer Interaction** course at Dept. of Information Science and Culture Studies, Seoul National University.

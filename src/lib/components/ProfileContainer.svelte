@@ -2,6 +2,7 @@
 	import email from '$lib/images/email.svg';
 	import github from '$lib/images/github-mark.svg';
 	import instagram from '$lib/images/instagram_mark.svg';
+	import linkedin from '$lib/images/linkedin.png';
 	import cv from '$lib/images/cv.png';
 </script>
 
@@ -21,6 +22,14 @@
 			class="w-6 mr-2"
 		>
 			<img alt="email" src={email} />
+		</a>
+		<!-- LinkedIn -->
+		<a
+			href="https://www.linkedin.com/in/joonyoung-park-487136185"
+			target="_blank"
+			rel="noopener noreferrer"
+		>
+			<img alt="linkedin" src={linkedin} class="w-6 mr-2" />
 		</a>
 		<!-- github -->
 		<a href="https://github.com/partlyjadedyouth" target="_blank" rel="noopener noreferrer">
@@ -103,7 +112,7 @@
 			rel="noopener noreferrer"
 			class="font-medium hover:underline"
 		>
-			Information Science
+			Information Science and Culture Studies
 		</a>
 		from
 		<a

@@ -29,4 +29,4 @@ The Note&Rest project was developed under the premise of **designing a near-futu
 
 ![poster](/projectAssets/note-n-rest/nnr_poster.png)_The poster that I created using gen-AI_
 
-This design work was submitted as coursework for **Creative Research Practice** course at Dept. of Information Science, Seoul National University.
+This design work was submitted as coursework for **Creative Research Practice** course at Dept. of Information Science and Culture Studies, Seoul National University.
