@@ -12,3 +12,4 @@ vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 codebase.md
 CLAUDE.md
+.claude
