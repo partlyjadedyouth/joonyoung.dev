@@ -127,6 +127,19 @@
 	<div class="font-extralight text-sm">Jul 2019 - Aug 2019</div>
 </section>
 
+<!-- ACADEMIC SERVICES -->
+<section class="mt-10 font-ibm">
+	<h1 class="text-2xl font-medium">Academic Services</h1>
+
+	<div class="mt-2">ACM DIS (PWiP)</div>
+	<div class="font-light">Reviewer</div>
+	<div class="font-extralight text-sm">2025</div>
+
+	<div class="mt-3">ACM CHI (EA)</div>
+	<div class="font-light">Reviewer</div>
+	<div class="font-extralight text-sm">2025</div>
+</section>
+
 <!-- AWARDS & HONORS -->
 <section class="mt-10 font-ibm">
 	<h1 class="text-2xl font-medium">AWARDS & HONORS</h1>
