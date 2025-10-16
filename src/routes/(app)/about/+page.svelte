@@ -129,15 +129,15 @@
 
 <!-- ACADEMIC SERVICES -->
 <section class="mt-10 font-ibm">
-	<h1 class="text-2xl font-medium">Academic Services</h1>
+	<h1 class="text-2xl font-medium">ACADEMIC SERVICES</h1>
 
-	<div class="mt-2">ACM DIS (PWiP)</div>
+	<div class="mt-2">ACM Designing Interactive Systems Conference (DIS)</div>
 	<div class="font-light">Reviewer</div>
-	<div class="font-extralight text-sm">2025</div>
+	<div class="font-extralight text-sm">2025 (PWiP)</div>
 
-	<div class="mt-3">ACM CHI (EA)</div>
+	<div class="mt-3">ACM Conference on Human Factors in Computing Systems (CHI)</div>
 	<div class="font-light">Reviewer</div>
-	<div class="font-extralight text-sm">2025</div>
+	<div class="font-extralight text-sm">2025 (EA), 2026 (Full Paper)</div>
 </section>
 
 <!-- AWARDS & HONORS -->
