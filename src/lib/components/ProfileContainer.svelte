@@ -7,11 +7,11 @@
 </script>
 
 <!-- Profile pic, name and social buttons -->
-<div class="flex flex-col items-center mb-8">
+<div class="flex flex-col items-start mb-8">
 	<!-- Profile pic -->
-	<enhanced:img alt="profile pic" src="$lib/images/profile.png" class="w-36 rounded-full" />
+	<!-- <enhanced:img alt="profile pic" src="$lib/images/profile.png" class="w-36 rounded-full" /> -->
 	<!-- Name -->
-	<h1 class="font-semibold font-biryani text-xl my-1">Joonyoung Park</h1>
+	<h1 class="font-semibold font-mono text-2xl my-1">Joonyoung Park</h1>
 	<!-- Social Buttons -->
 	<div class="flex">
 		<!-- mail -->
