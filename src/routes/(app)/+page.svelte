@@ -1,13 +1,14 @@
 <script lang="ts">
 	/**
 	 * [/+page.svelte]
-	 * This component renders the main page, displaying the profile section and the latest projects.
-	 * It imports and uses ProfileContainer and ProjectContainer components.
+	 * This component renders the main page, displaying the profile, news highlights, and latest projects.
+	 * It imports and uses ProfileContainer, NewsSection, and ProjectContainer components.
 	 * The data for the projects is passed as a prop to this component.
 	 */
 
 	import HorizontalLine from '$lib/components/HorizontalLine.svelte';
 	import ProfileContainer from '$lib/components/ProfileContainer.svelte';
+	import NewsSection from '$lib/components/NewsSection.svelte';
 	import ProjectContainer from '$lib/components/ProjectContainer.svelte';
 
 	export let data;
@@ -24,6 +25,12 @@
 <section class="py-10">
 	<ProfileContainer />
 </section>
+
+<!-- Horizontal Line -->
+<HorizontalLine my="10" />
+
+<!-- News section -->
+<NewsSection />
 
 <!-- Horizontal Line -->
 <HorizontalLine my="10" />
