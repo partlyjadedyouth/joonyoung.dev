@@ -49,7 +49,7 @@
 <!-- Self-introduction -->
 <div class="flex flex-col font-ibm font-light text-md">
 	<p class="mb-3">
-		I am an HCI researcher and Master's student in the
+		I am an HCI researcher and incoming Ph.D. student in the
 		<a
 			href="https://id.kaist.ac.kr"
 			target="_blank"
@@ -86,14 +86,10 @@
 		</a>.
 	</p>
 	<p class="mb-3">
-		I want to contribute to creating a more inclusive society where marginalized people can express
-		themselves, communicate freely with others, and learn through technology.
-	</p>
-	<p class="mb-3">
 		My research interests lie at the intersection of Human-Computer Interaction (HCI), Human-AI
-		Interaction (HAI), and AI-mediated communication. Specifically, I want to explore the potential
-		of LLMs to improve learning for people with disabilities, by facilitating communication between
-		people with disabilities and those without.
+		Interaction (HAI), and AI-mediated communication. Specifically, I aim to explore ways to improve
+		technological accessibility and create new opportunities for marginalized people through
+		multi-modal and cross-modal interactions.
 	</p>
 	<p>
 		Prior to my graduate studies, I received a B.S. in
