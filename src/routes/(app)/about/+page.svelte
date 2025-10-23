@@ -19,7 +19,7 @@
 <section class="pt-20">
 	<!-- Name -->
 	<div class="flex">
-		<h1 class="font-biryani text-2xl font-semibold mr-2">Joonyoung Park</h1>
+		<h1 class="font-mono text-2xl font-semibold mr-2">Joonyoung Park</h1>
 		<LinkContainer type="pdf" url="/pdfs/cv.pdf" />
 	</div>
 	<!-- Email -->
@@ -68,14 +68,36 @@
 	<h1 class="text-2xl font-medium">EDUCATION</h1>
 	<!-- KAIST -->
 	<div class="mt-2">
-		<b class="font-medium">KAIST</b>, Daejeon, Republic of Korea
+		<b class="font-medium">
+			<a
+				href="https://kaist.ac.kr"
+				target="_blank"
+				rel="noopener noreferrer"
+				class="hover:underline"
+			>
+				KAIST
+			</a>
+		</b>, Daejeon, Republic of Korea
 	</div>
-	<div class="font-light">M.S., Industrial Design</div>
-	<div class="font-light text-sm">Advisor: Hwajung Hong</div>
+	<div class="font-light">Ph.D., Industrial Design</div>
+	<div class="font-light text-sm">
+		Advisor: <a
+			href="https://galaxytourist.notion.site/Hwajung-Hong-cc10b0291bbe4ca38dbf4882cd687423"
+			target="_blank"
+			rel="noopener noreferrer"
+			class="hover:underline"
+		>
+			Hwajung Hong
+		</a>
+	</div>
 	<div class="font-extralight text-sm">Feb 2025 - Present</div>
 	<!-- SNU -->
 	<div class="mt-2">
-		<b class="font-medium">Seoul National University</b>, Seoul, Republic of Korea
+		<b class="font-medium">
+			<a href="https://snu.ac.kr" target="_blank" rel="noopener noreferrer" class="hover:underline">
+				Seoul National University
+			</a>
+		</b>, Seoul, Republic of Korea
 	</div>
 	<div class="font-light">
 		B.S., Electrical and Computer Engineering<br />
@@ -87,44 +109,59 @@
 	</div>
 </section>
 
-<!-- PUBLICATIONS -->
-<section class="mt-10 font-ibm">
-	<h1 class="text-2xl font-medium">PUBLICATIONS</h1>
-
-	<div class="mt-2">
-		NoRe: Augmenting Journaling Experience with Generative AI for Music Creation
-	</div>
-	<div class="font-light text-sm">
-		<u><b>Joonyoung Park</b></u>*, Hyewon Cho*, Hyehyun Chu*, Yeeun Lee, Hajin Lim
-		<div>DIS 2025</div>
-	</div>
-
-	<div class="mt-2">NoRe: 일기 기반 AI 음악 생성 앱을 위한 디자인 제언</div>
-	<div class="font-light text-sm">
-		<u><b>Joonyoung Park</b></u>*, Yeeun Lee*, Hyewon Cho*, Hyehyun Chu*, Jiin Cheon*, Jinsu Eun,
-		Hajin Lim
-		<div>Proceedings of HCI Korea 2025</div>
-	</div>
-</section>
-
 <!-- EXPERIENCE -->
 <section class="mt-10 font-ibm">
 	<h1 class="text-2xl font-medium">RESEARCH & WORK EXPERIENCE</h1>
 
 	<div class="mt-2">
 		<a href="http://hcid.snu.ac.kr/" target="_blank" rel="noopener noreferrer">
-			<b class="font-medium hover:underline">HCI+d Lab,</b>
+			<b class="font-medium hover:underline"> HCI+d Lab, </b>
 		</a> Seoul National University
 	</div>
 	<div class="font-light">Undergraduate Research Intern</div>
-	<div class="font-light text-sm">Advisor: Hajin Lim</div>
+	<div class="font-light text-sm">
+		Advisor: <a
+			href="https://www.hajinlim.com/"
+			target="_blank"
+			rel="noopener noreferrer"
+			class="hover:underline"
+		>
+			Hajin Lim
+		</a>
+	</div>
 	<div class="font-extralight text-sm">Jan 2024 - Dec 2024</div>
 
 	<div class="mt-3">
-		<b class="font-medium">Samsung Electro-Mechanics</b>, Suwon, Republic of Korea
+		<b class="font-medium hover:underline">
+			<a href="https://www.samsungsem.com/" target="_blank" rel="noopener noreferrer">
+				Samsung Electro-Mechanics
+			</a>
+		</b>, Suwon, Republic of Korea
 	</div>
 	<div class="font-light">Undergraduate Intern</div>
 	<div class="font-extralight text-sm">Jul 2019 - Aug 2019</div>
+</section>
+
+<!-- PUBLICATIONS -->
+<section class="mt-10 font-ibm">
+	<h1 class="text-2xl font-medium">PUBLICATIONS</h1>
+
+	<div class="mt-2 hover:underline">
+		<a href="https://doi.org/10.1145/3715336.3735845" target="_blank" rel="noopener noreferrer">
+			NoRe: Augmenting Journaling Experience with Generative AI for Music Creation
+		</a>
+	</div>
+	<div class="font-light text-sm">
+		<u><b>Joonyoung Park</b></u>*, Hyewon Cho*, Hyehyun Chu*, Yeeun Lee, Hajin Lim
+		<div>DIS 2025 (*equally contributed)</div>
+	</div>
+
+	<div class="mt-2">NoRe: 일기 기반 AI 음악 생성 앱을 위한 디자인 제언</div>
+	<div class="font-light text-sm">
+		<u><b>Joonyoung Park</b></u>*, Yeeun Lee*, Hyewon Cho*, Hyehyun Chu*, Jiin Cheon*, Jinsu Eun,
+		Hajin Lim
+		<div>HCI Korea 2025 (*equally contributed)</div>
+	</div>
 </section>
 
 <!-- ACADEMIC SERVICES -->
