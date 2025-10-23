@@ -25,6 +25,16 @@
 			<img alt="document" src={link} class="w-3 m-1 pt-1" />
 			<p class="font-barlow text-light hover:font-medium hover:underline">link</p>
 		</div>
+	{:else if type === 'doi'}
+		<div class="flex items-center">
+			<img alt="document" src={link} class="w-3 m-1 pt-1" />
+			<p class="font-barlow text-light hover:font-medium hover:underline">doi</p>
+		</div>
+	{:else if type === 'arxiv'}
+		<div class="flex items-center">
+			<img alt="document" src={link} class="w-3 m-1 pt-1" />
+			<p class="font-barlow text-light hover:font-medium hover:underline">arXiv</p>
+		</div>
 	{:else if type === 'code'}
 		<div class="flex items-center">
 			<img alt="github" src={github} class="w-3 m-1 pt-1" />

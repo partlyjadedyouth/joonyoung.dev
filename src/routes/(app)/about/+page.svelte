@@ -147,7 +147,7 @@
 	<h1 class="text-2xl font-medium">PUBLICATIONS</h1>
 
 	<div class="mt-2 hover:underline">
-		<a href="https://doi.org/10.1145/3715336.3735845" target="_blank" rel="noopener noreferrer">
+		<a href="/projects/nore" target="_blank" rel="noopener noreferrer">
 			NoRe: Augmenting Journaling Experience with Generative AI for Music Creation
 		</a>
 	</div>
