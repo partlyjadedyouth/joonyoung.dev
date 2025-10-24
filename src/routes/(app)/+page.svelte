@@ -10,10 +10,12 @@
 	import ProfileContainer from '$lib/components/ProfileContainer.svelte';
 	import NewsSection from '$lib/components/NewsSection.svelte';
 	import ProjectContainer from '$lib/components/ProjectContainer.svelte';
+	import newsData from '$lib/data/news.json';
 
 	export let data;
 
 	const projects = data.projects;
+	const recentNews = newsData.slice(0, 4);
 </script>
 
 <svelte:head>
@@ -41,7 +43,7 @@
 			</div>
 		</a>
 	</div>
-	<NewsSection />
+	<NewsSection items={recentNews} />
 </section>
 
 <!-- Horizontal Line -->

@@ -3,7 +3,7 @@
 		"id": "dxd-phd",
 		"title": "Accepted into the Ph.D. program @ID KAIST",
 		"date": "2025-09-18",
-		"summary": "I have finally been accepted into the Ph.D. program at ID KAIST and will begin my studies at the <a href=\"https://dxd-lab.github.io\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"font-medium hover:underline\">DxD Lab</a>."
+		"summary": "I have finally been accepted into the Ph.D. program at ID KAIST and will continue my studies at the <a href=\"https://dxd-lab.github.io\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"font-medium hover:underline\">DxD Lab</a>."
 	},
 	{
 		"id": "dis25-attend",
@@ -22,5 +22,11 @@
 		"title": "Joined the DxD Lab @ID KAIST",
 		"date": "2025-02-24",
 		"summary": "I joined the <a href=\"https://dxd-lab.github.io\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"font-medium hover:underline\">DxD Lab</a> at ID KAIST as a Master's student."
+	},
+	{
+		"id": "website-open",
+		"title": "Opened my personal website",
+		"date": "2024-03-18",
+		"summary": "Welcome to joonyoung.dev!"
 	}
 ]
