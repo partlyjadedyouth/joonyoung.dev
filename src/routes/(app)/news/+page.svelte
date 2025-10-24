@@ -16,5 +16,6 @@
 </svelte:head>
 
 <div class="pt-20">
-	<NewsSection items={news} showViewAll={false} />
+	<h1 class="font-ibm font-medium text-xl">News</h1>
+	<NewsSection items={news} />
 </div>

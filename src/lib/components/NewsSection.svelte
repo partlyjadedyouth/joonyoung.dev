@@ -11,7 +11,6 @@
 	};
 
 	export let items: NewsItem[] | null = null;
-	export let showViewAll = true;
 
 	let news: NewsItem[] = items ?? newsData;
 
@@ -28,20 +27,7 @@
 	};
 </script>
 
-<section class="py-10">
-	<div class="flex items-center justify-between">
-		<h1 class="font-ibm font-medium text-xl">News</h1>
-		{#if showViewAll && news.length > 0}
-			<a href="/news">
-				<div
-					class="text-xs font-medium border rounded px-3 py-1 border-gray-500 hover:bg-black hover:text-white transition-colors"
-				>
-					View all
-				</div>
-			</a>
-		{/if}
-	</div>
-
+<section>
 	{#if news.length === 0}
 		<p class="mt-6 font-ibm text-sm text-gray-500">
 			No news to share just yet. Please check back soon.

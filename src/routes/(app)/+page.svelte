@@ -30,7 +30,19 @@
 <HorizontalLine my="10" />
 
 <!-- News section -->
-<NewsSection />
+<section class="py-10">
+	<div class="flex justify-between">
+		<h1 class="font-ibm font-medium text-xl">News</h1>
+		<a href="/news">
+			<div
+				class="text-xs font-medium border rounded px-3 py-1 border-gray-500 hover:bg-black hover:text-white"
+			>
+				View all
+			</div>
+		</a>
+	</div>
+	<NewsSection />
+</section>
 
 <!-- Horizontal Line -->
 <HorizontalLine my="10" />
