@@ -22,7 +22,7 @@
 </svelte:head>
 
 <!-- Profile section -->
-<section class="py-10">
+<section class="pt-20 pb-10">
 	<ProfileContainer />
 </section>
 
