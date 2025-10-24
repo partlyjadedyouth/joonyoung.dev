@@ -1,5 +1,7 @@
 <script lang="ts">
-	let { w = '32', my = '0', color = 'black' } = $props();
+	export let w = '32';
+	export let my = '0';
+	export let color = 'black';
 
 	let widthClass: string;
 	let marginClass: string;
