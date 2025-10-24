@@ -40,7 +40,9 @@
 						{formatDate(item.date)}
 					</p>
 					<h2 class="text-lg font-medium">{item.title}</h2>
-					<p class="mt-2 mb-3 text-sm font-light leading-relaxed text-gray-700">{item.summary}</p>
+					<p class="mt-2 mb-3 text-sm font-light leading-relaxed text-gray-700">
+						{@html item.summary}
+					</p>
 				</article>
 				{#if index < news.length - 1}
 					<HorizontalLine w="full" color="gray" />

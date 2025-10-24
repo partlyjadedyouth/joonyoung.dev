@@ -1,23 +1,26 @@
 [
 	{
-		"id": "chi-2024",
-		"title": "Paper accepted to ACM CHI 2024",
-		"date": "2024-03-28",
-		"summary": "Our latest work on AI-mediated communication was accepted at ACM CHI 2024. Looking forward to presenting the findings in Honolulu.",
-		"link": "https://chi2024.acm.org"
+		"id": "dxd-phd",
+		"title": "Accepted into the Ph.D. program @ID KAIST",
+		"date": "2025-09-18",
+		"summary": "I have finally been accepted into the Ph.D. program at ID KAIST and will begin my studies at the <a href=\"https://dxd-lab.github.io\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"font-medium hover:underline\">DxD Lab</a>."
 	},
 	{
-		"id": "dxd-visit",
-		"title": "Joining DxD Lab as incoming Ph.D. student",
-		"date": "2023-11-06",
-		"summary": "I am excited to share that I will be joining the DxD Lab at KAIST as an incoming Ph.D. student under the supervision of Prof. Hwajung Hong.",
-		"link": "https://dxd-lab.github.io"
+		"id": "dis25-attend",
+		"title": "Attended DIS 2025",
+		"date": "2025-07-09",
+		"summary": "I presented the paper <a href=\"/projects/nore\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"font-medium hover:underline\">NoRe: Augmenting Journaling Experience with Generative AI for Music Creation</a> at DIS 2025 in Madeira, Portugal."
 	},
 	{
-		"id": "award-2023",
-		"title": "Received Outstanding Research Award",
-		"date": "2023-08-14",
-		"summary": "Honored to receive the Outstanding Research Award for my undergraduate thesis on AI accessibility for marginalized communities.",
-		"link": ""
+		"id": "dis25-accept",
+		"title": "One paper accepted to DIS 2025",
+		"date": "2025-05-08",
+		"summary": "Our paper <a href=\"/projects/nore\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"font-medium hover:underline\">NoRe: Augmenting Journaling Experience with Generative AI for Music Creation</a> was accepted to <a href=\"https://dis.acm.org/2025\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"font-medium hover:underline\">DIS 2025."
+	},
+	{
+		"id": "dxd-join",
+		"title": "Joined the DxD Lab @ID KAIST",
+		"date": "2025-02-24",
+		"summary": "I joined the <a href=\"https://dxd-lab.github.io\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"font-medium hover:underline\">DxD Lab</a> at ID KAIST as a Master's student."
 	}
 ]
