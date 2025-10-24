@@ -1,5 +1,5 @@
-import { error } from '@sveltejs/kit';
 import type { PageLoad } from './$types';
+import newsData from '$lib/data/news.json';
 
 type NewsItem = {
 	id: string;
@@ -9,18 +9,6 @@ type NewsItem = {
 	link?: string;
 };
 
-export const load: PageLoad = async ({ fetch }) => {
-	const response = await fetch('/data/news.json');
-
-	if (!response.ok) {
-		throw error(response.status, 'Failed to load news.');
-	}
-
-	const payload = (await response.json()) as unknown;
-
-	if (!Array.isArray(payload)) {
-		throw error(500, 'News data is in an unexpected format.');
-	}
-
-	return { news: payload as NewsItem[] };
+export const load: PageLoad = async () => {
+	return { news: newsData as NewsItem[] };
 };

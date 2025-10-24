@@ -1,6 +1,6 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
 	import HorizontalLine from '$lib/components/HorizontalLine.svelte';
+	import newsData from '$lib/data/news.json';
 
 	type NewsItem = {
 		id: string;
@@ -13,35 +13,7 @@
 	export let items: NewsItem[] | null = null;
 	export let showViewAll = true;
 
-	let news: NewsItem[] = items ?? [];
-	let loading = !items;
-	let error: string | null = null;
-
-	onMount(async () => {
-		if (items) {
-			return;
-		}
-
-		try {
-			const response = await fetch('/data/news.json');
-
-			if (!response.ok) {
-				throw new Error('Unable to load news for now.');
-			}
-
-			const payload = (await response.json()) as unknown;
-
-			if (Array.isArray(payload)) {
-				news = payload as NewsItem[];
-			} else {
-				throw new Error('News data is in an unexpected format.');
-			}
-		} catch (err) {
-			error = err instanceof Error ? err.message : 'Unknown error while fetching news.';
-		} finally {
-			loading = false;
-		}
-	});
+	let news: NewsItem[] = items ?? newsData;
 
 	const formatDate = (isoDate: string) => {
 		try {
@@ -59,7 +31,7 @@
 <section class="py-10">
 	<div class="flex items-center justify-between">
 		<h1 class="font-ibm font-medium text-xl">News</h1>
-		{#if showViewAll && !loading && !error && news.length > 0}
+		{#if showViewAll && news.length > 0}
 			<a href="/news">
 				<div
 					class="text-xs font-medium border rounded px-3 py-1 border-gray-500 hover:bg-black hover:text-white transition-colors"
@@ -70,11 +42,7 @@
 		{/if}
 	</div>
 
-	{#if loading}
-		<p class="mt-6 font-ibm text-sm text-gray-500">Fetching the latest updates…</p>
-	{:else if error}
-		<p class="mt-6 font-ibm text-sm text-red-500">{error}</p>
-	{:else if news.length === 0}
+	{#if news.length === 0}
 		<p class="mt-6 font-ibm text-sm text-gray-500">
 			No news to share just yet. Please check back soon.
 		</p>
