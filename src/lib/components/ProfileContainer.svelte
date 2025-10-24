@@ -36,9 +36,9 @@
 			<img alt="github" src={github} class="w-6 mr-2" />
 		</a>
 		<!-- instagram -->
-		<a href="https://instagram.com/partlyjadedyouth" target="_blank" rel="noopener noreferrer">
+		<!-- <a href="https://instagram.com/partlyjadedyouth" target="_blank" rel="noopener noreferrer">
 			<img alt="instagram" src={instagram} class="w-6 mr-2" />
-		</a>
+		</a> -->
 		<!-- cv -->
 		<a href="/pdfs/cv.pdf" target="_blank" rel="noopener noreferrer">
 			<img alt="Document icons created by Freepik - Flaticon" src={cv} class="w-6 mr-2" />
