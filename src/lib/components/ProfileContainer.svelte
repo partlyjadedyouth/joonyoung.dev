@@ -91,7 +91,7 @@
 		technological accessibility and create new opportunities for marginalized people through
 		multi-modal and cross-modal interactions.
 	</p>
-	<p>
+	<p class="mb-3">
 		Prior to my graduate studies, I received a B.S. in
 		<a
 			href="https://ece.snu.ac.kr"
@@ -119,5 +119,26 @@
 		>
 			Seoul National University
 		</a>.
+	</p>
+	<p>
+		Personally, I love listening to music, both at home and at live concerts. Check out my
+		<a
+			href="https://rateyourmusic.com/~Proshuto"
+			target="_blank"
+			rel="noopener noreferrer"
+			class="font-medium hover:underline inline-block"
+		>
+			RYM profile
+		</a>
+		to see the albums I've been exploring. I also occasionally take
+		<a
+			href="https://www.instagram.com/partlyjadedyesterdays"
+			target="_blank"
+			rel="noopener noreferrer"
+			class="font-medium hover:underline inline-block"
+		>
+			film photographs
+		</a>
+		with my grandfather's Pentax, which I inherited from him.
 	</p>
 </div>
