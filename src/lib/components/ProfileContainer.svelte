@@ -139,6 +139,6 @@
 		>
 			film photographs
 		</a>
-		with my grandfather's Pentax, which I inherited from him.
+		with my grandfather's Pentax.
 	</p>
 </div>
