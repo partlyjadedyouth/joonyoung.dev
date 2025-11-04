@@ -12,14 +12,16 @@
 	import ProjectContainer from '$lib/components/ProjectContainer.svelte';
 	import newsData from '$lib/data/news.json';
 
-	export let data;
+	// Use $props() to receive data from the page load function
+	let { data } = $props();
 
-	const projects = data.projects;
+	// Derived values that update reactively when data changes
+	let projects = $derived(data.projects);
 	const recentNews = newsData.slice(0, 4);
 </script>
 
 <svelte:head>
-	<title>Joonyoung Park</title>
+	<title>joonyoung park</title>
 	<meta name="description" content="Joonyoung's Blog" />
 </svelte:head>
 

@@ -5,13 +5,15 @@
 	 */
 	import NewsSection from '$lib/components/NewsSection.svelte';
 
-	export let data;
+	// Use $props() to receive data from the page load function
+	let { data } = $props();
 
-	const news = data.news ?? [];
+	// Create a derived value for news with fallback to empty array
+	let news = $derived(data.news ?? []);
 </script>
 
 <svelte:head>
-	<title>news</title>
+	<title>news | joonyoung park</title>
 	<meta name="description" content="Latest news and updates from Joonyoung Park." />
 </svelte:head>
 

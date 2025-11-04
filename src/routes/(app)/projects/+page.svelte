@@ -8,16 +8,16 @@
 	// Importing the ProjectContainer component from the specified path
 	import ProjectContainer from '$lib/components/ProjectContainer.svelte';
 
-	// Declaring 'data' as a prop that will be passed to this component
-	export let data;
+	// Use $props() to receive data from the page load function
+	let { data } = $props();
 
-	// Extracting the 'projects' property from the 'data' object
-	const projects = data.projects;
+	// Create a derived value for projects that updates when data changes
+	let projects = $derived(data.projects);
 </script>
 
 <svelte:head>
 	<!-- Setting the page title to 'projects' -->
-	<title>projects</title>
+	<title>projects | joonyoung park</title>
 	<!-- Adding meta description for SEO purposes -->
 	<meta name="description" content="Joonyoung's Blog" />
 </svelte:head>
