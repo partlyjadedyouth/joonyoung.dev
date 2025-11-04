@@ -7,10 +7,11 @@
 	 */
 
 	import LinkContainer from '$lib/components/LinkContainer.svelte';
-	import { onMount, afterUpdate } from 'svelte';
 
-	export let data;
-	$: project = data.project;
+	// Use $props() to receive data from the page load function
+	let { data } = $props();
+	// Create a derived value for project that updates when data changes
+	let project = $derived(data.project);
 
 	// Function to add padding to child elements of the post container
 	function addPaddingToElements() {
@@ -111,13 +112,14 @@
 		alignImageCaptionsCenter();
 	}
 
-	// Use afterUpdate to handle DOM manipulations when data changes
-	afterUpdate(() => {
+	// Use $effect to handle DOM manipulations when data changes
+	// This runs whenever the project data changes
+	$effect(() => {
+		// Access project to create reactive dependency
+		project;
 		setupPage();
-	});
 
-	// Clean up on component destruction
-	onMount(() => {
+		// Return cleanup function
 		return () => {
 			cleanup();
 		};
