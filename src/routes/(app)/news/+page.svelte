@@ -5,9 +5,11 @@
 	 */
 	import NewsSection from '$lib/components/NewsSection.svelte';
 
-	export let data;
+	// Use $props() to receive data from the page load function
+	let { data } = $props();
 
-	const news = data.news ?? [];
+	// Create a derived value for news with fallback to empty array
+	let news = $derived(data.news ?? []);
 </script>
 
 <svelte:head>
