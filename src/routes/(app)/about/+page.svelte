@@ -12,7 +12,7 @@
 </script>
 
 <svelte:head>
-	<title>about</title>
+	<title>about | joonyoung park</title>
 	<meta name="description" content="Joonyoung's Blog" />
 </svelte:head>
 

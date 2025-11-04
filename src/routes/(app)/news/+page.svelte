@@ -11,7 +11,7 @@
 </script>
 
 <svelte:head>
-	<title>news</title>
+	<title>news | joonyoung park</title>
 	<meta name="description" content="Latest news and updates from Joonyoung Park." />
 </svelte:head>
 

@@ -17,7 +17,7 @@
 
 <svelte:head>
 	<!-- Setting the page title to 'projects' -->
-	<title>projects</title>
+	<title>projects | joonyoung park</title>
 	<!-- Adding meta description for SEO purposes -->
 	<meta name="description" content="Joonyoung's Blog" />
 </svelte:head>
