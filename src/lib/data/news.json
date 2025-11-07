@@ -3,7 +3,7 @@
 		"id": "dxd-phd",
 		"title": "Accepted into the Ph.D. program @ID KAIST",
 		"date": "2025-09-18",
-		"summary": "I have finally been accepted into the Ph.D. program at ID KAIST and will continue my studies at the <a href=\"https://dxd-lab.github.io\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"font-medium hover:underline\">DxD Lab</a>."
+		"summary": "I'm excited to share that I've accepted into the Ph.D. program at ID KAIST and will be continuing my studies at the <a href=\"https://dxd-lab.github.io\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"font-medium hover:underline\">DxD Lab</a>."
 	},
 	{
 		"id": "dis25-attend",
@@ -15,7 +15,7 @@
 		"id": "dis25-accept",
 		"title": "One paper accepted to DIS 2025",
 		"date": "2025-05-08",
-		"summary": "Our paper <a href=\"/projects/nore\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"font-medium hover:underline\">NoRe: Augmenting Journaling Experience with Generative AI for Music Creation</a> was accepted to <a href=\"https://dis.acm.org/2025\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"font-medium hover:underline\">DIS 2025."
+		"summary": "Our paper <a href=\"/projects/nore\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"font-medium hover:underline\">NoRe: Augmenting Journaling Experience with Generative AI for Music Creation</a> has been accepted to <a href=\"https://dis.acm.org/2025\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"font-medium hover:underline\">DIS 2025."
 	},
 	{
 		"id": "dxd-join",
@@ -24,9 +24,15 @@
 		"summary": "I joined the <a href=\"https://dxd-lab.github.io\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"font-medium hover:underline\">DxD Lab</a> at ID KAIST as a Master's student."
 	},
 	{
+		"id": "snu-grad",
+		"title": "Graduated Seoul National University",
+		"date": "2025-02-26",
+		"summary": "I graduated Seoul National University."
+	},
+	{
 		"id": "website-open",
 		"title": "Opened my personal website",
 		"date": "2024-03-18",
-		"summary": "Welcome to joonyoung.dev!"
+		"summary": "Welcome to joonyoung.dev :)"
 	}
 ]
