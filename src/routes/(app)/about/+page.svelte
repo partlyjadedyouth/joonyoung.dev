@@ -153,7 +153,7 @@
 	<div class="font-light text-sm">
 		Sung-In Kim, <u><b>Joonyoung Park</b></u>, Taewan Kim, Woosuk Seo, Taerim Kim, Won Chul Cha,
 		Hwajung Hong
-		<div class="italic">Under Review</div>
+		<div class="italic">Scientific Reports (to appear)</div>
 	</div>
 
 	<div class="mt-2 hover:underline">
