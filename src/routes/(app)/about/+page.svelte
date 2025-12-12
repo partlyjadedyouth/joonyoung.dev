@@ -146,7 +146,7 @@
 <section class="mt-10 font-ibm">
 	<h1 class="text-2xl font-medium">PUBLICATIONS</h1>
 
-	<div class="mt-2">
+	<div class="mt-2 hover:underline">
 		<a
 			href="https://www.nature.com/articles/s41598-025-31113-y"
 			target="_blank"
