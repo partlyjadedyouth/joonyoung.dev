@@ -31,19 +31,7 @@
 			<p class="font-ibm hover:font-medium hover:underline">joonyoung@kaist.ac.kr</p>
 		</a>
 	</div>
-	<!-- Website -->
-	<div class="flex items-center">
-		<a href="https://joonyoung.dev" target="_blank" rel="noopener noreferrer">
-			<img
-				alt="Browser icons created by kmg design - Flaticon"
-				src={browser}
-				class="w-5 mr-1 pt-1"
-			/>
-		</a>
-		<a href="https://joonyoung.dev" target="_blank" rel="noopener noreferrer">
-			<p class="font-ibm hover:font-medium hover:underline">joonyoung.dev</p>
-		</a>
-	</div>
+
 	<!-- LinkedIn -->
 	<div class="flex items-center">
 		<a
@@ -59,6 +47,19 @@
 			rel="noopener noreferrer"
 		>
 			<p class="font-ibm hover:font-medium hover:underline">Joonyoung Park</p>
+		</a>
+	</div>
+	<!-- Website -->
+	<div class="flex items-center">
+		<a href="https://joonyoung.dev" target="_blank" rel="noopener noreferrer">
+			<img
+				alt="Browser icons created by kmg design - Flaticon"
+				src={browser}
+				class="w-5 mr-1 pt-1"
+			/>
+		</a>
+		<a href="https://joonyoung.dev" target="_blank" rel="noopener noreferrer">
+			<p class="font-ibm hover:font-medium hover:underline">joonyoung.dev</p>
 		</a>
 	</div>
 </section>
