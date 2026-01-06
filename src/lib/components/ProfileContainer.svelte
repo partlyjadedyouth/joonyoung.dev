@@ -1,53 +1,47 @@
 <script>
-	import email from '$lib/images/email.svg';
-	import github from '$lib/images/github-mark.svg';
-	import instagram from '$lib/images/instagram_mark.svg';
-	import linkedin from '$lib/images/linkedin.png';
-	import cv from '$lib/images/cv.png';
+	// import email from '$lib/images/email.svg';
+	// import github from '$lib/images/github-mark.svg';
+	// import linkedin from '$lib/images/linkedin.png';
+	// import cv from '$lib/images/cv.png';
+
+	const socialLinks = [
+		{ href: '/about', label: 'CV', external: true },
+		{ href: 'mailto:joonyoung@kaist.ac.kr', label: 'Email', external: true },
+		{
+			href: 'https://www.linkedin.com/in/joonyoung-park-487136185',
+			label: 'LinkedIn',
+			external: true
+		},
+		{ href: 'https://github.com/partlyjadedyouth', label: 'GitHub', external: true },
+		{
+			href: 'https://scholar.google.com/citations?user=c2MDDjoAAAAJ',
+			label: 'Google Scholar',
+			external: true
+		}
+	];
 </script>
 
 <!-- Profile pic, name and social buttons -->
-<div class="flex flex-col items-start mb-8">
+<div class="flex flex-col items-start mb-7">
 	<!-- Profile pic -->
 	<!-- <enhanced:img alt="profile pic" src="$lib/images/profile.png" class="w-36 rounded-full" /> -->
 	<!-- Name -->
-	<h1 class="font-semibold font-mono text-2xl mb-1">Joonyoung Park</h1>
-	<!-- Social Buttons -->
-	<div class="flex">
-		<!-- mail -->
+	<h1 class="font-semibold font-mono text-2xl">Joonyoung Park</h1>
+	<div class="font-medium font-ibm">
+		Ph.D. Student @
 		<a
-			href="mailto:joonyoung@kaist.ac.kr"
+			href="https://dxd-lab.github.io"
 			target="_blank"
 			rel="noopener noreferrer"
-			class="w-6 mr-2"
+			class="font-medium hover:underline inline-block"
 		>
-			<img alt="email" src={email} />
-		</a>
-		<!-- LinkedIn -->
-		<a
-			href="https://www.linkedin.com/in/joonyoung-park-487136185"
-			target="_blank"
-			rel="noopener noreferrer"
-		>
-			<img alt="linkedin" src={linkedin} class="w-6 mr-2" />
-		</a>
-		<!-- github -->
-		<a href="https://github.com/partlyjadedyouth" target="_blank" rel="noopener noreferrer">
-			<img alt="github" src={github} class="w-6 mr-2" />
-		</a>
-		<!-- instagram -->
-		<!-- <a href="https://instagram.com/partlyjadedyouth" target="_blank" rel="noopener noreferrer">
-			<img alt="instagram" src={instagram} class="w-6 mr-2" />
-		</a> -->
-		<!-- cv -->
-		<a href="/pdfs/cv.pdf" target="_blank" rel="noopener noreferrer">
-			<img alt="Document icons created by Freepik - Flaticon" src={cv} class="w-6 mr-2" />
-		</a>
+			DxD Lab
+		</a>, KAIST
 	</div>
 </div>
 
 <!-- Self-introduction -->
-<div class="flex flex-col font-ibm font-light text-md hyphens-auto">
+<div class="flex flex-col font-ibm font-light text-md hyphens-auto mb-7">
 	<p class="mb-3">
 		I am an HCI researcher and a Ph.D. student in the
 		<a
@@ -74,15 +68,6 @@
 			class="font-medium hover:underline"
 		>
 			Prof. Hwajung Hong
-		</a>
-		at the
-		<a
-			href="https://dxd-lab.github.io"
-			target="_blank"
-			rel="noopener noreferrer"
-			class="font-medium hover:underline inline-block"
-		>
-			DxD Lab
 		</a>.
 	</p>
 	<p class="mb-3">
@@ -141,4 +126,22 @@
 		</a>
 		with my grandfather's Pentax.
 	</p>
+</div>
+
+<!-- Social Buttons -->
+<div class="flex flex-wrap items-center gap-x-2 gap-y-0 font-ibm font-light">
+	{#each socialLinks as link, i (link.href)}
+		<a
+			href={link.href}
+			target={link.external ? '_blank' : undefined}
+			rel={link.external ? 'noopener noreferrer' : undefined}
+			class="hover:underline"
+		>
+			{link.label}
+		</a>
+
+		{#if i !== socialLinks.length - 1}
+			<span aria-hidden="true">|</span>
+		{/if}
+	{/each}
 </div>
