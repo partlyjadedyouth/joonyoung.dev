@@ -22,7 +22,7 @@
 </script>
 
 <!-- Profile pic, name and social buttons -->
-<div class="flex flex-col items-start mb-7">
+<section class="flex flex-col items-start mb-7">
 	<!-- Profile pic -->
 	<!-- <enhanced:img alt="profile pic" src="$lib/images/profile.png" class="w-36 rounded-full" /> -->
 	<!-- Name -->
@@ -38,10 +38,10 @@
 			DxD Lab
 		</a>, KAIST
 	</div>
-</div>
+</section>
 
 <!-- Self-introduction -->
-<div class="flex flex-col font-ibm font-light text-md hyphens-auto mb-7">
+<section class="flex flex-col font-ibm font-light text-md hyphens-auto mb-7">
 	<p class="mb-3">
 		I am an HCI researcher and a Ph.D. student in the
 		<a
@@ -126,10 +126,10 @@
 		</a>
 		with my grandfather's Pentax.
 	</p>
-</div>
+</section>
 
 <!-- Social Buttons -->
-<div class="flex flex-wrap items-center gap-x-2 gap-y-0 font-ibm font-light">
+<section class="flex flex-wrap items-center gap-x-2 gap-y-0 font-ibm font-light">
 	{#each socialLinks as link, i (link.href)}
 		<a
 			href={link.href}
@@ -144,4 +144,4 @@
 			<span aria-hidden="true">|</span>
 		{/if}
 	{/each}
-</div>
+</section>
