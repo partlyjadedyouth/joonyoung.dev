@@ -22,43 +22,41 @@
 		<h1 class="font-mono text-2xl font-semibold mr-2">Joonyoung Park</h1>
 		<LinkContainer type="pdf" url="/pdfs/cv.pdf" />
 	</div>
-	<!-- Website -->
-	<div class="flex items-center">
-		<a href="https://joonyoung.dev" target="_blank" rel="noopener noreferrer">
+
+	<div class="flex flex-col">
+		<!-- Website -->
+		<a
+			href="https://joonyoung.dev"
+			target="_blank"
+			rel="noopener noreferrer"
+			class="inline-flex items-end gap-x-1.5"
+		>
 			<img
 				alt="Browser icons created by kmg design - Flaticon"
 				src={browser}
-				class="w-5 mr-1 pt-1"
+				class="w-5 h-5 align-middle"
 			/>
+			<span class="font-ibm hover:font-medium hover:underline">joonyoung.dev</span>
 		</a>
-		<a href="https://joonyoung.dev" target="_blank" rel="noopener noreferrer">
-			<p class="font-ibm hover:font-medium hover:underline">joonyoung.dev</p>
+		<!-- Email -->
+		<a
+			href="mailto:joonyoung@kaist.ac.kr"
+			target="_blank"
+			rel="noopener noreferrer"
+			class="inline-flex items-end gap-x-1.5"
+		>
+			<img alt="email" src={email} class="w-5 h-5 align-middle" />
+			<span class="font-ibm hover:font-medium hover:underline">joonyoung@kaist.ac.kr</span>
 		</a>
-	</div>
-	<!-- Email -->
-	<div class="flex items-center">
-		<a href="mailto:joonyoung@kaist.ac.kr" target="_blank" rel="noopener noreferrer">
-			<img alt="email" src={email} class="w-5 mr-1 pt-1" />
-		</a>
-		<a href="mailto:joonyoung@kaist.ac.kr" target="_blank" rel="noopener noreferrer">
-			<p class="font-ibm hover:font-medium hover:underline">joonyoung@kaist.ac.kr</p>
-		</a>
-	</div>
-	<!-- LinkedIn -->
-	<div class="flex items-center">
+		<!-- LinkedIn -->
 		<a
 			href="https://www.linkedin.com/in/joonyoung-park-487136185"
 			target="_blank"
 			rel="noopener noreferrer"
+			class="inline-flex items-start gap-x-1.5 mt-0.5"
 		>
-			<img alt="LinkedIn" src={linkedin} class="w-5 mr-1" />
-		</a>
-		<a
-			href="https://www.linkedin.com/in/joonyoung-park-487136185"
-			target="_blank"
-			rel="noopener noreferrer"
-		>
-			<p class="font-ibm hover:font-medium hover:underline">Joonyoung Park</p>
+			<img alt="LinkedIn" src={linkedin} class="w-5 h-5 align-middle" />
+			<span class="font-ibm hover:font-medium hover:underline">Joonyoung Park</span>
 		</a>
 	</div>
 </section>
