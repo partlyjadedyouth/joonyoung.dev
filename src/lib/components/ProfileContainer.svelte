@@ -49,7 +49,7 @@
 <!-- Self-introduction -->
 <div class="flex flex-col font-ibm font-light text-md hyphens-auto">
 	<p class="mb-3">
-		I am an HCI researcher and an incoming Ph.D. student in the
+		I am an HCI researcher and a Ph.D. student in the
 		<a
 			href="https://id.kaist.ac.kr"
 			target="_blank"
