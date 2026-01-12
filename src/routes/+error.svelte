@@ -63,9 +63,36 @@
 			<div class="bg-gray-900 text-gray-200 p-4 rounded text-xs leading-relaxed mb-6">
 				<!-- macOS-style window controls -->
 				<div class="flex gap-2 mb-4">
-					<div class="w-3 h-3 rounded-full bg-red-500"></div>
-					<div class="w-3 h-3 rounded-full bg-yellow-500"></div>
-					<div class="w-3 h-3 rounded-full bg-green-500"></div>
+					<!-- Red button - close/go back -->
+					<button
+						class="w-3 h-3 rounded-full bg-red-500 hover:bg-red-600 flex items-center justify-center group cursor-pointer transition-colors"
+						onclick={() => window.history.back()}
+						aria-label="Go back"
+					>
+						<span class="hidden group-hover:block text-lg text-red-900 font-bold leading-none"
+							>×</span
+						>
+					</button>
+					<!-- Yellow button - minimize (non-functional) -->
+					<button
+						class="w-3 h-3 rounded-full bg-yellow-500 hover:bg-yellow-600 flex items-center justify-center group cursor-default transition-colors"
+						onclick={() => window.history.back()}
+						aria-label="Minimize"
+					>
+						<span class="hidden group-hover:block text-lg text-yellow-900 font-bold leading-none"
+							>−</span
+						>
+					</button>
+					<!-- Green button - maximize (non-functional) -->
+					<button
+						class="w-3 h-3 rounded-full bg-green-500 hover:bg-green-600 flex items-center justify-center group cursor-default transition-colors"
+						onclick={() => window.history.back()}
+						aria-label="Maximize"
+					>
+						<span class="hidden group-hover:block text-lg text-green-900 font-bold leading-none"
+							>·</span
+						>
+					</button>
 				</div>
 
 				<!-- Terminal-style prompt -->
