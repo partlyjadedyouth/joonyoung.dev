@@ -8,7 +8,6 @@
 	import '../app.css';
 	import { dev } from '$app/environment';
 	import { page } from '$app/state';
-	import Header from '$lib/components/Header.svelte';
 	import Footer from '$lib/components/Footer.svelte';
 
 	// Access status and error from the page state (SvelteKit 2 approach)
@@ -62,6 +61,13 @@
 		<section class="font-mono">
 			<!-- Stack trace style suggestion box -->
 			<div class="bg-gray-900 text-gray-200 p-4 rounded text-xs leading-relaxed mb-6">
+				<!-- macOS-style window controls -->
+				<div class="flex gap-2 mb-4">
+					<div class="w-3 h-3 rounded-full bg-red-500"></div>
+					<div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+					<div class="w-3 h-3 rounded-full bg-green-500"></div>
+				</div>
+
 				<!-- Terminal-style prompt -->
 				<div class="text-xs mb-4">
 					<span class="select-none">$</span> vi ./{status}.md
