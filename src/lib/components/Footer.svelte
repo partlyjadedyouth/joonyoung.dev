@@ -23,6 +23,6 @@
 				SvelteKit
 			</a>
 		</p>
-		<p>Last updated at Jan 13, 2026</p>
+		<p>Last updated at Jan 16, 2026</p>
 	</div>
 </footer>
