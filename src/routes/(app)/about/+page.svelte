@@ -222,12 +222,12 @@
 	<div class="mt-2">
 		<b class="font-medium">Student-Directed Education Grant</b>, Seoul National University
 	</div>
-	<div class="font-extralight">Sep 2024</div>
+	<div class="font-extralight text-sm">Sep 2024</div>
 
 	<div class="mt-2">
-		<b class="font-medium">10% Merit-Based Scholarship</b>, Seoul National University
+		<b class="font-medium">Merit-Based Scholarship</b>, Seoul National University
 	</div>
-	<div class="font-extralight">Feb 2017</div>
+	<div class="font-extralight text-sm">Feb 2017</div>
 </section>
 
 <section class="pb-20"></section>
