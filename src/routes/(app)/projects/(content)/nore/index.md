@@ -3,7 +3,7 @@
 
 	export const metadata = {
 		id: 'nore',
-		year: '2025',
+		year: '2024-2025',
 		title: 'NoRe: Augmenting Journaling Experience with Generative AI for Music Creation',
 		description:
 			"Developed NoRe, a system transforms users' written journal entries into emotionally resonant musical compositions.",
