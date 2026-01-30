@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	/**
 	 * [/about/+page.svelte]
 	 * This component renders the About page, displaying personal information, contact details,
@@ -12,10 +12,10 @@
 	import { publications } from '$lib/data/publications';
 
 	const highlightedName = 'Joonyoung Park';
-	const splitAuthors = (authors) => authors.split(highlightedName);
-	const authorSegments = (authors) => {
+	const splitAuthors = (authors: string) => authors.split(highlightedName);
+	const authorSegments = (authors: string) => {
 		const parts = splitAuthors(authors);
-		return parts.map((part, index) => ({
+		return parts.map((part: string, index: number) => ({
 			part,
 			highlight: index < parts.length - 1
 		}));

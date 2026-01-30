@@ -1,9 +1,10 @@
 import { error } from '@sveltejs/kit';
+import type { PageServerLoad } from './$types';
 import type { Project } from '$lib/utils/definitions';
 
 const projectModules = import.meta.glob('/src/routes/**/index.md', { eager: true });
 
-export function load({ params }) {
+export const load: PageServerLoad = ({ params }) => {
 	const { slug } = params;
 	const modulePath = `/src/routes/(app)/projects/(content)/${slug}/index.md`;
 	const module = projectModules[modulePath] as { metadata?: Project } | undefined;
@@ -17,4 +18,4 @@ export function load({ params }) {
 		slug,
 		project: projectData
 	};
-}
+};

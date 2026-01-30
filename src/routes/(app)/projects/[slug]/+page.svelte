@@ -8,16 +8,17 @@
 
 	import LinkContainer from '$lib/components/LinkContainer.svelte';
 	import { tick } from 'svelte';
-	import type { ComponentType, SvelteComponent } from 'svelte';
+	import type { PageData } from './$types';
+	import type { Component } from 'svelte';
 
 	// Use $props() to receive data from the page load function
-	let { data } = $props();
+	let { data }: { data: PageData } = $props();
 	// Create a derived value for project that updates when data changes
 	let project = $derived(data.project);
 	let slug = $derived(data.slug);
 
 	const projectModules = import.meta.glob('/src/routes/**/index.md');
-	let Content = $state<ComponentType<SvelteComponent> | null>(null);
+	let Content = $state<Component | null>(null);
 	let contentError = $state<Error | null>(null);
 	let isLoading = $state(false);
 
@@ -137,7 +138,7 @@
 
 		loader()
 			.then((module) => {
-				Content = (module as { default: ComponentType<SvelteComponent> }).default;
+			Content = (module as { default: Component }).default;
 			})
 			.catch((error) => {
 				contentError = error as Error;
