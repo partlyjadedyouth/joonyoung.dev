@@ -165,15 +165,15 @@
 		{:else}
 			<div class="mt-2">{publication.title}</div>
 		{/if}
-		<div class="font-light text-sm">
+		<div class="font-light text-sm italic">
 			{#each authorSegments(publication.authors) as segment}
 				{segment.part}
 				{#if segment.highlight}
 					<u><b>{highlightedName}</b></u>
 				{/if}
 			{/each}
-			<div class="italic">{publication.venue}</div>
 		</div>
+		<div class="font-light text-sm">{publication.venue}</div>
 	{/each}
 </section>
 
@@ -181,18 +181,20 @@
 <section class="mt-10 font-ibm">
 	<h1 class="text-2xl font-medium">ACADEMIC SERVICES</h1>
 
-	<div class="mt-2">ACM Designing Interactive Systems Conference (DIS)</div>
-	<div class="font-light">Reviewer</div>
-	<div class="font-extralight text-sm">2025 (PWiP)</div>
-
-	<div class="mt-3">ACM Conference on Human Factors in Computing Systems (CHI)</div>
-	<div class="font-light">Reviewer</div>
-	<div class="font-extralight text-sm">2025 (EA), 2026 (Full Paper)</div>
+	<!-- Reviewer -->
+	<div class="mt-2 font-medium">Reviewer</div>
+	<div class="font-light mr-1">ACM CHI <span class="font-extralight"> 2025-2026</span></div>
+	<div class="font-light mr-1">ACM DIS <span class="font-extralight"> 2025</span></div>
 </section>
 
 <!-- AWARDS & HONORS -->
 <section class="mt-10 font-ibm">
 	<h1 class="text-2xl font-medium">AWARDS & HONORS</h1>
+
+	<div class="mt-2">
+		<b class="font-medium">Student-Directed Education Grant</b>, Seoul National University
+	</div>
+	<div class="font-extralight">Sep 2024</div>
 
 	<div class="mt-2">
 		<b class="font-medium">10% Merit-Based Scholarship</b>, Seoul National University
