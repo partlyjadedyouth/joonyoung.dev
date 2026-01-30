@@ -211,8 +211,8 @@
 			<HorizontalLine w="full" my="0" color="bg-black/20" />
 		</div> -->
 	</div>
-	<div class="font-light mr-1">ACM CHI <span class="font-extralight"> 2025-2026</span></div>
-	<div class="font-light mr-1">ACM DIS <span class="font-extralight"> 2025</span></div>
+	<div class="font-light mr-1 text-sm">ACM CHI <span class="font-extralight"> 2025-2026</span></div>
+	<div class="font-light mr-1 text-sm">ACM DIS <span class="font-extralight"> 2025</span></div>
 </section>
 
 <!-- AWARDS & HONORS -->
