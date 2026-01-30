@@ -7,7 +7,12 @@ const getYearValue = (year: string) => {
 	if (!matches || matches.length === 0) {
 		return 0;
 	}
-	return Number(matches[matches.length - 1]);
+	if (matches.length >= 2) {
+		const start = Number(matches[0]);
+		const end = Number(matches[1]);
+		return (start + end) / 2;
+	}
+	return Number(matches[0]);
 };
 
 const projects = Object.entries(projectModules)
