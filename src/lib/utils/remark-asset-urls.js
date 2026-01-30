@@ -1,7 +1,12 @@
 import { visit } from 'unist-util-visit';
 
+/** @typedef {{ type: string, children?: unknown[] }} Root */
+/** @typedef {{ type: string, url?: string, alt?: string, title?: string, value?: string }} Image */
+
+/** @param {string | undefined | null} value */
 const isRelativeUrl = (value) => value && !/^([a-z]+:|\/)/i.test(value);
 
+/** @param {string} value */
 const escapeAttr = (value) =>
 	String(value)
 		.replace(/&/g, '&amp;')
@@ -10,8 +15,9 @@ const escapeAttr = (value) =>
 		.replace(/>/g, '&gt;');
 
 export function remarkAssetUrls() {
+	/** @param {Root} tree */
 	return (tree) => {
-		visit(tree, 'image', (node) => {
+		visit(tree, 'image', /** @param {Image} node */ (node) => {
 			if (!isRelativeUrl(node.url)) {
 				return;
 			}
