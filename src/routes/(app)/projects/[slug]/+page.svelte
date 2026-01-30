@@ -7,11 +7,19 @@
 	 */
 
 	import LinkContainer from '$lib/components/LinkContainer.svelte';
+	import { tick } from 'svelte';
+	import type { ComponentType, SvelteComponent } from 'svelte';
 
 	// Use $props() to receive data from the page load function
 	let { data } = $props();
 	// Create a derived value for project that updates when data changes
 	let project = $derived(data.project);
+	let slug = $derived(data.slug);
+
+	const projectModules = import.meta.glob('/src/routes/**/index.md');
+	let Content = $state<ComponentType<SvelteComponent> | null>(null);
+	let contentError = $state<Error | null>(null);
+	let isLoading = $state(false);
 
 	// Function to add padding to child elements of the post container
 	function addPaddingToElements() {
@@ -115,14 +123,46 @@
 	// Use $effect to handle DOM manipulations when data changes
 	// This runs whenever the project data changes
 	$effect(() => {
-		// Access project to create reactive dependency
-		project;
-		setupPage();
+		const modulePath = `/src/routes/(app)/projects/(content)/${slug}/index.md`;
+		const loader = projectModules[modulePath];
+		Content = null;
+		contentError = null;
+		isLoading = true;
+
+		if (!loader) {
+			contentError = new Error('Project content not found');
+			isLoading = false;
+			return;
+		}
+
+		loader()
+			.then((module) => {
+				Content = (module as { default: ComponentType<SvelteComponent> }).default;
+			})
+			.catch((error) => {
+				contentError = error as Error;
+			})
+			.finally(() => {
+				isLoading = false;
+			});
 
 		// Return cleanup function
 		return () => {
 			cleanup();
 		};
+	});
+
+	$effect(() => {
+		if (!Content) {
+			return;
+		}
+
+		const run = async () => {
+			await tick();
+			setupPage();
+		};
+
+		run();
 	});
 </script>
 
@@ -148,7 +188,13 @@
 	<div class="mt-5 font-ibm">
 		<!-- Post -->
 		<div class="font-light hyphenate flex flex-col space-y-5" id="post-container">
-			{@html project.content}
+			{#if isLoading}
+				<p class="text-sm text-gray-500">Loading content...</p>
+			{:else if contentError}
+				<p class="text-sm text-gray-500">Failed to load content.</p>
+			{:else if Content}
+				<Content />
+			{/if}
 		</div>
 		<!-- What I've done -->
 		<div class="sm:mx-10">
