@@ -1,22 +1,11 @@
 import { error } from '@sveltejs/kit';
 import type { Project } from '$lib/utils/definitions';
 
-const projectModules = import.meta.glob('$lib/content/projects/*.md', { eager: true });
-
-function normalizeThumbnail(project: Project): Project {
-	return {
-		...project,
-		thumbnail: project.thumbnail.startsWith('/projectAssets/')
-			? project.thumbnail
-			: project.thumbnail.startsWith('/')
-				? `/projectAssets${project.thumbnail}`
-				: `/projectAssets/${project.thumbnail}`
-	};
-}
+const projectModules = import.meta.glob('$lib/content/projects/*/index.md', { eager: true });
 
 export function load({ params }) {
 	const { slug } = params;
-	const modulePath = `/src/lib/content/projects/${slug}.md`;
+	const modulePath = `/src/lib/content/projects/${slug}/index.md`;
 	const module = projectModules[modulePath] as { metadata?: Project } | undefined;
 	const projectData = module?.metadata;
 
@@ -26,6 +15,6 @@ export function load({ params }) {
 
 	return {
 		slug,
-		project: normalizeThumbnail(projectData)
+		project: projectData
 	};
 }

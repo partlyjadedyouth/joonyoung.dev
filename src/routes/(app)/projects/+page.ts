@@ -10,11 +10,11 @@ import { projectIDs } from '$lib/data/projects';
 // Importing the Project type definition
 import type { Project } from '$lib/utils/definitions';
 
-const projectModules = import.meta.glob('$lib/content/projects/*.md', { eager: true });
+const projectModules = import.meta.glob('$lib/content/projects/*/index.md', { eager: true });
 
 const projectById = Object.entries(projectModules).reduce<Record<string, Project>>(
 	(acc, [path, module]) => {
-		const slug = path.split('/').pop()?.replace('.md', '');
+		const slug = path.split('/').slice(-2, -1)[0];
 		if (slug) {
 			const metadata = (module as { metadata?: Project }).metadata;
 			if (metadata) {
@@ -25,17 +25,6 @@ const projectById = Object.entries(projectModules).reduce<Record<string, Project
 	},
 	{}
 );
-
-function normalizeThumbnail(project: Project): Project {
-	return {
-		...project,
-		thumbnail: project.thumbnail.startsWith('/projectAssets/')
-			? project.thumbnail
-			: project.thumbnail.startsWith('/')
-				? `/projectAssets${project.thumbnail}`
-				: `/projectAssets/${project.thumbnail}`
-	};
-}
 
 // Asynchronous function to load project data
 export function load() {
@@ -48,7 +37,7 @@ export function load() {
 
 		// Adding the parsed project data to the projects array
 		if (project) {
-			projects.push(normalizeThumbnail(project));
+			projects.push(project);
 		}
 	}
 

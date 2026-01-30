@@ -16,7 +16,7 @@
 	let project = $derived(data.project);
 	let slug = $derived(data.slug);
 
-	const projectModules = import.meta.glob('$lib/content/projects/*.md');
+	const projectModules = import.meta.glob('$lib/content/projects/*/index.md');
 	let Content = $state<ComponentType<SvelteComponent> | null>(null);
 	let contentError = $state<Error | null>(null);
 	let isLoading = $state(false);
@@ -123,7 +123,7 @@
 	// Use $effect to handle DOM manipulations when data changes
 	// This runs whenever the project data changes
 	$effect(() => {
-		const modulePath = `/src/lib/content/projects/${slug}.md`;
+		const modulePath = `/src/lib/content/projects/${slug}/index.md`;
 		const loader = projectModules[modulePath];
 		Content = null;
 		contentError = null;
