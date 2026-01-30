@@ -1,10 +1,11 @@
 export const publications = [
 	{
 		title:
-			'"I Choose to Live, for Life Itself”: Understanding Agency of Home-Based Care Patients Through Information Practices and Relational Dynamics in Care Networks',
+			'"I Choose to Live, for Life Itself": Understanding Agency of Home-Based Care Patients Through Information Practices and Relational Dynamics in Care Networks',
 		href: '',
 		authors: 'Sung-In Kim*, Joonyoung Park*, Bogoan Kim, Hwajung Hong',
-		venue: 'CHI 2026 (to appear) (*equally contributed)'
+		venue: 'CHI 2026',
+		year: 2026
 	},
 	{
 		title:
@@ -12,18 +13,21 @@ export const publications = [
 		href: 'https://www.nature.com/articles/s41598-025-31113-y',
 		authors:
 			'Sung-In Kim, Joonyoung Park, Taewan Kim, Woosuk Seo, Taerim Kim, Won Chul Cha, Hwajung Hong',
-		venue: 'Scientific Reports 16, 2026'
+		venue: 'Scientific Reports 16',
+		year: 2026
 	},
 	{
 		title: 'NoRe: Augmenting Journaling Experience with Generative AI for Music Creation',
 		href: '/projects/nore',
 		authors: 'Joonyoung Park*, Hyewon Cho*, Hyehyun Chu*, Yeeun Lee, Hajin Lim',
-		venue: 'DIS 2025 (*equally contributed)'
+		venue: 'DIS 2025',
+		year: 2025
 	},
 	{
 		title: 'NoRe: 일기 기반 AI 음악 생성 앱을 위한 디자인 제언',
 		authors:
 			'Joonyoung Park*, Yeeun Lee*, Hyewon Cho*, Hyehyun Chu*, Jiin Cheon*, Jinsu Eun, Hajin Lim',
-		venue: 'HCI Korea 2025 (*equally contributed)'
+		venue: 'HCI Korea 2025',
+		year: 2025
 	}
 ];

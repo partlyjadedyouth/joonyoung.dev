@@ -9,6 +9,7 @@
 	import browser from '$lib/images/browser.png';
 	import linkedin from '$lib/images/linkedin.png';
 	import LinkContainer from '$lib/components/LinkContainer.svelte';
+	import HorizontalLine from '$lib/components/HorizontalLine.svelte';
 	import { publications } from '$lib/data/publications';
 
 	const highlightedName = 'Joonyoung Park';
@@ -20,6 +21,20 @@
 			highlight: index < parts.length - 1
 		}));
 	};
+	const groupedPublications = publications.reduce<Record<string, typeof publications>>(
+		(acc, publication) => {
+			const year = publication.year?.toString() ?? 'Other';
+			if (!acc[year]) acc[year] = [];
+			acc[year].push(publication);
+			return acc;
+		},
+		{}
+	);
+	const sortedPublicationYears = Object.keys(groupedPublications).sort((a, b) => {
+		if (a === 'Other') return 1;
+		if (b === 'Other') return -1;
+		return Number(b) - Number(a);
+	});
 </script>
 
 <svelte:head>
@@ -155,25 +170,33 @@
 <section class="mt-10 font-ibm">
 	<h1 class="text-2xl font-medium">PUBLICATIONS</h1>
 
-	{#each publications as publication}
-		{#if publication.href}
-			<div class="mt-2 hover:underline">
-				<a href={publication.href} target="_blank" rel="noopener noreferrer">
-					{publication.title}
-				</a>
+	{#each sortedPublicationYears as year}
+		<div class="mt-2 flex items-center">
+			<h2 class="font-medium">{year}</h2>
+			<div class="ml-4 flex-1">
+				<HorizontalLine w="full" my="0" color="bg-black" />
 			</div>
-		{:else}
-			<div class="mt-2">{publication.title}</div>
-		{/if}
-		<div class="font-light text-sm italic">
-			{#each authorSegments(publication.authors) as segment}
-				{segment.part}
-				{#if segment.highlight}
-					<u><b>{highlightedName}</b></u>
-				{/if}
-			{/each}
 		</div>
-		<div class="font-light text-sm">{publication.venue}</div>
+		{#each groupedPublications[year] as publication}
+			{#if publication.href}
+				<div class="mt-2 hover:underline">
+					<a href={publication.href} target="_blank" rel="noopener noreferrer">
+						{publication.title}
+					</a>
+				</div>
+			{:else}
+				<div class="mt-2">{publication.title}</div>
+			{/if}
+			<div class="font-light text-sm italic">
+				{#each authorSegments(publication.authors) as segment}
+					{segment.part}
+					{#if segment.highlight}
+						<u><b>{highlightedName}</b></u>
+					{/if}
+				{/each}
+			</div>
+			<div class="font-light text-sm">{publication.venue}</div>
+		{/each}
 	{/each}
 </section>
 
@@ -182,7 +205,12 @@
 	<h1 class="text-2xl font-medium">ACADEMIC SERVICES</h1>
 
 	<!-- Reviewer -->
-	<div class="mt-2 font-medium">Reviewer</div>
+	<div class="mt-2 flex items-center">
+		<h2 class="font-medium">Reviewer</h2>
+		<!-- <div class="ml-4 flex-1">
+			<HorizontalLine w="full" my="0" color="bg-black/20" />
+		</div> -->
+	</div>
 	<div class="font-light mr-1">ACM CHI <span class="font-extralight"> 2025-2026</span></div>
 	<div class="font-light mr-1">ACM DIS <span class="font-extralight"> 2025</span></div>
 </section>
