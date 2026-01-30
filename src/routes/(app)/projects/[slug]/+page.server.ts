@@ -1,46 +1,31 @@
 import { error } from '@sveltejs/kit';
-import { marked } from 'marked';
-import { parseFrontmatter, parsePost } from '$lib/utils/parse-md';
 import type { Project } from '$lib/utils/definitions';
 
-const projectFiles = import.meta.glob('/static/projectAssets/**/index.md', {
-	eager: true,
-	query: '?raw',
-	import: 'default'
-});
+const projectModules = import.meta.glob('$lib/content/projects/*.md', { eager: true });
 
-export async function load({ params }) {
-	const { slug } = params;
-	const matchingFile = Object.entries(projectFiles).find(([path]) =>
-		path.includes(`/static/projectAssets/${slug}/`)
-	);
-
-	if (!matchingFile) {
-		throw error(404, `Project not found`);
-	}
-
-	const [, content] = matchingFile;
-
-	const projectData = parseFrontmatter(content as string);
-	if (!projectData) {
-		throw error(500, `Failed to parse project data`);
-	}
-
-	const markdown = parsePost(content as string);
-	const htmlContent = marked(markdown.trim());
-
-	// Adjust the thumbnail path
-	const adjustedProjectData = {
-		...projectData,
-		thumbnail: projectData.thumbnail.startsWith('/')
-			? `/projectAssets${projectData.thumbnail}`
-			: `/projectAssets/${projectData.thumbnail}`
+function normalizeThumbnail(project: Project): Project {
+	return {
+		...project,
+		thumbnail: project.thumbnail.startsWith('/projectAssets/')
+			? project.thumbnail
+			: project.thumbnail.startsWith('/')
+				? `/projectAssets${project.thumbnail}`
+				: `/projectAssets/${project.thumbnail}`
 	};
+}
+
+export function load({ params }) {
+	const { slug } = params;
+	const modulePath = `/src/lib/content/projects/${slug}.md`;
+	const module = projectModules[modulePath] as { metadata?: Project } | undefined;
+	const projectData = module?.metadata;
+
+	if (!projectData) {
+		throw error(404, 'Project not found');
+	}
 
 	return {
-		project: {
-			...adjustedProjectData,
-			content: htmlContent
-		} as Project & { content: string }
+		slug,
+		project: normalizeThumbnail(projectData)
 	};
 }

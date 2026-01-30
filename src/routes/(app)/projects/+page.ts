@@ -7,27 +7,49 @@
 
 // Importing the projectIDs array from the specified path
 import { projectIDs } from '$lib/data/projects';
-// Importing the parseFrontmatter function for parsing markdown frontmatter
-import { parseFrontmatter } from '$lib/utils/parse-md';
 // Importing the Project type definition
 import type { Project } from '$lib/utils/definitions';
 
+const projectModules = import.meta.glob('$lib/content/projects/*.md', { eager: true });
+
+const projectById = Object.entries(projectModules).reduce<Record<string, Project>>(
+	(acc, [path, module]) => {
+		const slug = path.split('/').pop()?.replace('.md', '');
+		if (slug) {
+			const metadata = (module as { metadata?: Project }).metadata;
+			if (metadata) {
+				acc[slug] = metadata;
+			}
+		}
+		return acc;
+	},
+	{}
+);
+
+function normalizeThumbnail(project: Project): Project {
+	return {
+		...project,
+		thumbnail: project.thumbnail.startsWith('/projectAssets/')
+			? project.thumbnail
+			: project.thumbnail.startsWith('/')
+				? `/projectAssets${project.thumbnail}`
+				: `/projectAssets/${project.thumbnail}`
+	};
+}
+
 // Asynchronous function to load project data
-export async function load({ fetch }) {
+export function load() {
 	// Initializing an empty array to hold the project data
 	const projects: Project[] = [];
 
 	// Looping through each projectID in the projectIDs array
 	for (const projectID of projectIDs) {
-		// Fetching the markdown file for the current projectID
-		const markdown = await fetch(`/projectAssets/${projectID}/index.md`);
-		// Reading the content of the fetched markdown file as text
-		const content = await markdown.text();
-		// Parsing the frontmatter (metadata) from the markdown content
-		const project = parseFrontmatter(content);
+		const project = projectById[projectID];
 
 		// Adding the parsed project data to the projects array
-		projects.push(project!);
+		if (project) {
+			projects.push(normalizeThumbnail(project));
+		}
 	}
 
 	// Returning the projects array as a response
