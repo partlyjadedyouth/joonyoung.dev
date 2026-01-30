@@ -1,7 +1,7 @@
 <script context="module">
-	const thumbnail = new URL('./thumbnail.png', import.meta.url).href;
-	const slides = new URL('./nnr_slides.pdf', import.meta.url).href;
-	const poster = new URL('./nnr_poster.pdf', import.meta.url).href;
+	import thumbnail from './thumbnail.png?url';
+	import slides from './nnr_slides.pdf?url';
+	import poster from './nnr_poster.pdf?url';
 
 	export const metadata = {
 		id: 'note-n-rest',

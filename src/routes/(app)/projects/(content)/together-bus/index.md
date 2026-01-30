@@ -1,6 +1,6 @@
 <script context="module">
-	const thumbnail = new URL('./together-bus.png', import.meta.url).href;
-	const deck = new URL('./together_bus.pdf', import.meta.url).href;
+	import thumbnail from './together-bus.png?url';
+	import deck from './together_bus.pdf?url';
 
 	export const metadata = {
 		id: 'together-bus',

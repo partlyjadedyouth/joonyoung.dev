@@ -8,10 +8,13 @@
 import { projectIDs } from '$lib/data/projects';
 import type { Project } from '$lib/utils/definitions';
 
-const projectModules = import.meta.glob('$lib/content/projects/*/index.md', { eager: true });
+const projectModules = import.meta.glob('/src/routes/**/index.md', { eager: true });
 
 const projectById = Object.entries(projectModules).reduce<Record<string, Project>>(
 	(acc, [path, module]) => {
+		if (!path.includes('/projects/(content)/')) {
+			return acc;
+		}
 		const slug = path.split('/').slice(-2, -1)[0];
 		if (slug) {
 			const metadata = (module as { metadata?: Project }).metadata;

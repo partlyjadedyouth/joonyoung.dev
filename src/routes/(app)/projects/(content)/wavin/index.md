@@ -1,7 +1,7 @@
 <script context="module">
-	const thumbnail = new URL('./wavin.png', import.meta.url).href;
-	const paper = new URL('./wavin_paper.pdf', import.meta.url).href;
-	const poster = new URL('./wavin_poster.pdf', import.meta.url).href;
+	import thumbnail from './wavin.png?url';
+	import paper from './wavin_paper.pdf?url';
+	import poster from './wavin_poster.pdf?url';
 
 	export const metadata = {
 		id: 'wavin',

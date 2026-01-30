@@ -1,5 +1,5 @@
 <script context="module">
-	const thumbnail = new URL('./escape-anywhere.png', import.meta.url).href;
+	import thumbnail from './escape-anywhere.png?url';
 
 	export const metadata = {
 		id: 'escape-anywhere',
