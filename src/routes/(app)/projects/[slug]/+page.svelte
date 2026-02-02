@@ -138,7 +138,7 @@
 
 		loader()
 			.then((module) => {
-			Content = (module as { default: Component }).default;
+				Content = (module as { default: Component }).default;
 			})
 			.catch((error) => {
 				contentError = error as Error;
