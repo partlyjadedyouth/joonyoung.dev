@@ -200,6 +200,26 @@
 	{/each}
 </section>
 
+<!-- TEACHING -->
+<section class="mt-10 font-ibm">
+	<h1 class="text-2xl font-medium">TEACHING EXPERIENCE</h1>
+
+	<!-- Mentor -->
+	<div class="mt-2">
+		<b class="font-medium">Graduate Mentor for URP Program, </b> KAIST
+		<div class="font-extralight text-sm">Mar 2026 - Sep 2026</div>
+	</div>
+	<div class="mt-2">
+		<b class="font-medium">Graduate Teaching Assistant, </b> KAIST
+		<div class="font-light mr-1 text-sm">
+			Design Thinking for Startup (KEI560) <span class="font-extralight"> 2025-2026</span>
+		</div>
+		<div class="font-light mr-1 text-sm">
+			Photo Techniques (ID218) <span class="font-extralight"> 2025</span>
+		</div>
+	</div>
+</section>
+
 <!-- ACADEMIC SERVICES -->
 <section class="mt-10 font-ibm">
 	<h1 class="text-2xl font-medium">ACADEMIC SERVICES</h1>
@@ -212,7 +232,7 @@
 		</div> -->
 	</div>
 	<div class="font-light mr-1 text-sm">ACM CHI <span class="font-extralight"> 2025-2026</span></div>
-	<div class="font-light mr-1 text-sm">ACM DIS <span class="font-extralight"> 2025</span></div>
+	<div class="font-light mr-1 text-sm">ACM DIS <span class="font-extralight"> 2025-2026</span></div>
 </section>
 
 <!-- AWARDS & HONORS -->

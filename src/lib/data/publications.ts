@@ -19,15 +19,15 @@ export const publications = [
 	{
 		title: 'NoRe: Augmenting Journaling Experience with Generative AI for Music Creation',
 		href: '/projects/nore',
-		authors: 'Joonyoung Park*, Hyewon Cho*, Hyehyun Chu*, Yeeun Lee, Hajin Lim',
+		authors: 'Joonyoung Park*, Hyewon Cho*, Hyehyun Chu*, YeEun Lee, Hajin Lim',
 		venue: 'DIS 2025',
 		year: 2025
 	},
 	{
 		title: 'NoRe: 일기 기반 AI 음악 생성 앱을 위한 디자인 제언',
 		authors:
-			'Joonyoung Park*, Yeeun Lee*, Hyewon Cho*, Hyehyun Chu*, Jiin Cheon*, Jinsu Eun, Hajin Lim',
-		venue: 'HCI Korea 2025',
+			'Joonyoung Park*, YeEun Lee*, Hyewon Cho*, Hyehyun Chu*, Jiin Cheon*, Jinsu Eun, Hajin Lim',
+		venue: 'HCIK 2025',
 		year: 2025
 	}
 ];
