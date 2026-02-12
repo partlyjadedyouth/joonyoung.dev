@@ -5,11 +5,13 @@
 	 * education background, work experience, awards, and proficiency in languages and tools.
 	 */
 
-	import email from '$lib/images/email.svg';
+	import emailIcon from '$lib/images/email.svg';
 	import browser from '$lib/images/browser.png';
 	import linkedin from '$lib/images/linkedin.png';
 	import LinkContainer from '$lib/components/LinkContainer.svelte';
+	import ObfuscatedEmail from '$lib/components/ObfuscatedEmail.svelte';
 	import HorizontalLine from '$lib/components/HorizontalLine.svelte';
+	import { PRIMARY_EMAIL_DOMAIN_CODES, PRIMARY_EMAIL_USER_CODES } from '$lib/data/contact';
 	import { publications } from '$lib/data/publications';
 
 	const highlightedName = 'Joonyoung Park';
@@ -35,6 +37,7 @@
 		if (b === 'Other') return -1;
 		return Number(b) - Number(a);
 	});
+
 </script>
 
 <svelte:head>
@@ -65,15 +68,16 @@
 			<span class="font-ibm hover:font-medium hover:underline">joonyoung.dev</span>
 		</a>
 		<!-- Email -->
-		<a
-			href="mailto:joonyoung@kaist.ac.kr"
-			target="_blank"
-			rel="noopener noreferrer"
-			class="inline-flex items-end gap-x-1.5"
+		<ObfuscatedEmail
+			userCodes={PRIMARY_EMAIL_USER_CODES}
+			domainCodes={PRIMARY_EMAIL_DOMAIN_CODES}
+			className="inline-flex items-end gap-x-1.5"
+			let:email
+			let:isReady
 		>
-			<img alt="email" src={email} class="w-5 h-5 align-middle" />
-			<span class="font-ibm hover:font-medium hover:underline">joonyoung@kaist.ac.kr</span>
-		</a>
+			<img alt="email" src={emailIcon} class="w-5 h-5 align-middle" />
+			<span class="font-ibm hover:font-medium hover:underline">{isReady ? email : 'Email'}</span>
+		</ObfuscatedEmail>
 		<!-- LinkedIn -->
 		<a
 			href="https://www.linkedin.com/in/joonyoung-park-487136185"

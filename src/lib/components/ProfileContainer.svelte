@@ -1,4 +1,7 @@
 <script>
+	import ObfuscatedEmail from '$lib/components/ObfuscatedEmail.svelte';
+	import { PRIMARY_EMAIL_DOMAIN_CODES, PRIMARY_EMAIL_USER_CODES } from '$lib/data/contact';
+
 	// import email from '$lib/images/email.svg';
 	// import github from '$lib/images/github-mark.svg';
 	// import linkedin from '$lib/images/linkedin.png';
@@ -6,7 +9,7 @@
 
 	const socialLinks = [
 		{ href: '/about', label: 'CV', external: true },
-		{ href: 'mailto:joonyoung@kaist.ac.kr', label: 'Email', external: true },
+		{ label: 'Email', obfuscated: true },
 		{
 			href: 'https://www.linkedin.com/in/joonyoung-park-487136185',
 			label: 'LinkedIn',
@@ -130,15 +133,26 @@
 
 <!-- Social Buttons -->
 <section class="flex flex-wrap items-center gap-x-2 gap-y-0 font-ibm font-light">
-	{#each socialLinks as link, i (link.href)}
-		<a
-			href={link.href}
-			target={link.external ? '_blank' : undefined}
-			rel={link.external ? 'noopener noreferrer' : undefined}
-			class="hover:underline"
-		>
-			{link.label}
-		</a>
+	{#each socialLinks as link, i (`${link.label}-${link.href ?? 'obfuscated-email'}`)}
+		{#if link.obfuscated}
+			<ObfuscatedEmail
+				userCodes={PRIMARY_EMAIL_USER_CODES}
+				domainCodes={PRIMARY_EMAIL_DOMAIN_CODES}
+				className="hover:underline"
+				label={link.label}
+			>
+				{link.label}
+			</ObfuscatedEmail>
+		{:else}
+			<a
+				href={link.href}
+				target={link.external ? '_blank' : undefined}
+				rel={link.external ? 'noopener noreferrer' : undefined}
+				class="hover:underline"
+			>
+				{link.label}
+			</a>
+		{/if}
 
 		{#if i !== socialLinks.length - 1}
 			<span aria-hidden="true">|</span>
