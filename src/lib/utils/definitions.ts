@@ -10,5 +10,6 @@ export interface Project {
 	description: string;
 	thumbnail: string;
 	role: string;
+	award?: string;
 	links: LinkDetails[];
 }

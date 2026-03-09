@@ -8,6 +8,7 @@
 		description:
 			"A qualitative study of home-based care networks that explains how patient agency is expressed at home and why it often disappears from shared care planning",
 		thumbnail,
+		award: "Honorable Mention at CHI26",
 		role: 'Co-project leader (Project planning, data analysis, paper writing)',
 		links: [
 			{ type: 'arxiv', url: 'https://arxiv.org/abs/2601.23127' }
@@ -31,4 +32,4 @@ Based on these insights, this paper offers design considerations that aim to bri
 
 In conclusion, this work reframes patient agency in HBC as something built through relationships, recognition, and the lived material context of the home. It also shows that information practices are not neutral. They decide what counts and what can be shared.
 
-This paper was published at **[CHI 2026](https://chi2026.acm.org/)** in Barcelona.
+This paper was published at **[CHI 2026](https://chi2026.acm.org/)** in Barcelona, and received an **Honorable Mention Award (Top 5% of paper submissions).**

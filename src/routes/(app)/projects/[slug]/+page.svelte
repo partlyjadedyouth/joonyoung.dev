@@ -7,6 +7,7 @@
 	 */
 
 	import LinkContainer from '$lib/components/LinkContainer.svelte';
+	import awardIcon from '$lib/images/award.png';
 	import { tick } from 'svelte';
 	import type { PageData } from './$types';
 	import type { Component } from 'svelte';
@@ -174,7 +175,14 @@
 
 <section class="flex flex-col items-center py-20">
 	<!-- Title -->
-	<p class="font-biryani font-semibold text-3xl text-center">{project.title}</p>
+	<p class="mt-3 font-biryani font-semibold text-3xl text-center">{project.title}</p>
+
+	{#if project.award}
+		<div class="font-barlow font-regular text-lg italic flex items-center gap-2 mt-1">
+			<img src={awardIcon} alt="Award" class="h-6" />
+			<span>{project.award}</span>
+		</div>
+	{/if}
 
 	<!-- Project year -->
 	<p class="font-ibm mt-1 text-lg">{project.year}</p>
