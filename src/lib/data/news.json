@@ -1,5 +1,11 @@
 [
 	{
+		"id": "chi26-honorable-mention",
+		"title": "Our paper received an Honorable Mention Award at CHI 2026",
+		"date": "2026-03-09",
+		"summary": "Our paper <a href=\"/projects/chi26\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"font-medium hover:underline\">Understanding Agency of Home-Based Care Patients Through Information Practices and Relational Dynamics in Care Networks</a> has received an Honorable Mention Award at <a href=\"https://chi2026.acm.org/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"font-medium hover:underline\">CHI 2026</a>."
+	},
+	{
 		"id": "chi26-accept",
 		"title": "One paper accepted to CHI 2026",
 		"date": "2026-03-03",
