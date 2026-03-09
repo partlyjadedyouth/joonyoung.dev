@@ -1,11 +1,21 @@
-export const publications = [
+export type Publication = {
+	title: string;
+	href?: string;
+	authors: string;
+	venue: string;
+	year: number;
+	award?: string;
+};
+
+export const publications: Publication[] = [
 	{
 		title:
 			'"I Choose to Live, for Life Itself": Understanding Agency of Home-Based Care Patients Through Information Practices and Relational Dynamics in Care Networks',
 		href: '/projects/chi26',
 		authors: 'Sung-In Kim*, Joonyoung Park*, Bogoan Kim, Hwajung Hong',
 		venue: 'CHI 2026',
-		year: 2026
+		year: 2026,
+		award: 'Honorable Mention Award'
 	},
 	{
 		title:

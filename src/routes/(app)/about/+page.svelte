@@ -8,6 +8,7 @@
 	import emailIcon from '$lib/images/email.svg';
 	import browser from '$lib/images/browser.png';
 	import linkedin from '$lib/images/linkedin.png';
+	import awardIcon from '$lib/images/award.png';
 	import LinkContainer from '$lib/components/LinkContainer.svelte';
 	import ObfuscatedEmail from '$lib/components/ObfuscatedEmail.svelte';
 	import HorizontalLine from '$lib/components/HorizontalLine.svelte';
@@ -37,7 +38,6 @@
 		if (b === 'Other') return -1;
 		return Number(b) - Number(a);
 	});
-
 </script>
 
 <svelte:head>
@@ -200,6 +200,12 @@
 				{/each}
 			</div>
 			<div class="font-light text-sm">{publication.venue}</div>
+			{#if publication.award}
+				<div class="font-regular text-sm flex items-center gap-1">
+					<img src={awardIcon} alt="Award" class="h-4" />
+					<span>{publication.award}</span>
+				</div>
+			{/if}
 		{/each}
 	{/each}
 </section>
@@ -242,6 +248,11 @@
 <!-- AWARDS & HONORS -->
 <section class="mt-10 font-ibm">
 	<h1 class="text-2xl font-medium">AWARDS & HONORS</h1>
+
+	<div class="mt-2">
+		<b class="font-medium">Honorable Mention Award</b>, ACM CHI 2026
+	</div>
+	<div class="font-extralight text-sm">Mar 2026</div>
 
 	<div class="mt-2">
 		<b class="font-medium">Student-Directed Education Grant</b>, Seoul National University
