@@ -8,7 +8,6 @@
 
 	import LinkContainer from '$lib/components/LinkContainer.svelte';
 	import awardIcon from '$lib/images/award.png';
-	import { tick } from 'svelte';
 	import type { PageData } from './$types';
 	import type { Component } from 'svelte';
 
@@ -34,10 +33,11 @@
 	let Content = $state<Component | null>(null);
 	let contentError = $state<Error | null>(null);
 	let isLoading = $state(false);
+	let postContainerEl = $state<HTMLDivElement | null>(null);
 
 	// Function to add padding to child elements of the post container
 	function addPaddingToElements() {
-		const container = document.getElementById('post-container');
+		const container = postContainerEl;
 		if (container) {
 			const children = container.children;
 			for (const child of children) {
@@ -52,7 +52,7 @@
 
 	// Function to add borders to all images inside the post container
 	function formatImages() {
-		const postContainer = document.getElementById('post-container');
+		const postContainer = postContainerEl;
 		if (postContainer) {
 			const images = postContainer.getElementsByTagName('img');
 			for (let img of images) {
@@ -64,7 +64,7 @@
 
 	// Function to add hover effects to all links inside the post container
 	function addHoverEffectToLinks() {
-		const postContainer = document.getElementById('post-container');
+		const postContainer = postContainerEl;
 		if (postContainer) {
 			const links = postContainer.getElementsByTagName('a');
 			for (let link of links) {
@@ -75,7 +75,7 @@
 
 	// Function to center-align all image captions within the post container
 	function alignImageCaptionsCenter() {
-		const postContainer = document.getElementById('post-container');
+		const postContainer = postContainerEl;
 		if (postContainer) {
 			const captions = postContainer.getElementsByTagName('em');
 			for (let caption of captions) {
@@ -116,7 +116,7 @@
 
 	// Function to clean up event listeners
 	function cleanup() {
-		const postContainer = document.getElementById('post-container');
+		const postContainer = postContainerEl;
 		if (postContainer) {
 			const images = postContainer.getElementsByTagName('img');
 			for (let img of images) {
@@ -167,16 +167,21 @@
 	});
 
 	$effect(() => {
-		if (!Content) {
+		if (!postContainerEl) {
 			return;
 		}
 
-		const run = async () => {
-			await tick();
+		const observer = new MutationObserver(() => {
 			setupPage();
-		};
+		});
 
-		run();
+		observer.observe(postContainerEl, { childList: true, subtree: true });
+		setupPage();
+
+		return () => {
+			observer.disconnect();
+			cleanup();
+		};
 	});
 </script>
 
@@ -215,7 +220,7 @@
 
 	<div class="mt-5 font-ibm">
 		<!-- Post -->
-		<div class="font-light hyphenate flex flex-col space-y-5" id="post-container">
+		<div class="font-light hyphenate flex flex-col space-y-5" id="post-container" bind:this={postContainerEl}>
 			{#if isLoading}
 				<p class="text-sm text-gray-500">Loading content...</p>
 			{:else if contentError}
