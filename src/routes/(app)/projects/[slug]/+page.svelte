@@ -17,6 +17,18 @@
 	// Create a derived value for project that updates when data changes
 	let project = $derived(data.project);
 	let slug = $derived(data.slug);
+	const splitProjectTitle = (title: string) => {
+		const separatorIndex = title.indexOf(':');
+		if (separatorIndex === -1) {
+			return { title, subtitle: '' };
+		}
+
+		return {
+			title: title.slice(0, separatorIndex).trim(),
+			subtitle: title.slice(separatorIndex + 1).trim()
+		};
+	};
+	let titleParts = $derived(splitProjectTitle(project.title));
 
 	const projectModules = import.meta.glob('/src/routes/**/index.md');
 	let Content = $state<Component | null>(null);
@@ -173,22 +185,29 @@
 	<meta name="description" content="Joonyoung's Blog" />
 </svelte:head>
 
-<section class="flex flex-col items-center py-20">
-	<!-- Title -->
-	<p class="mt-3 font-biryani font-semibold text-3xl text-center">{project.title}</p>
+<section class="flex flex-col items-start py-20">
+	<div class="mt-1 flex items-center gap-3">
+		<!-- Project year -->
+		<p class="font-ibm text-lg">{project.year}</p>
 
-	{#if project.award}
-		<div class="font-barlow font-regular text-lg italic flex items-center gap-2 mt-1">
-			<img src={awardIcon} alt="Award" class="h-6" />
-			<span>{project.award}</span>
-		</div>
+		{#if project.award}
+			<div class="font-barlow font-medium text-lg italic flex items-center gap-2">
+				<img src={awardIcon} alt="Award" class="h-6" />
+				<span>{project.award}</span>
+			</div>
+		{/if}
+	</div>
+
+	<!-- Title -->
+	{#if titleParts.subtitle}
+		<p class="mt-3 font-biryani font-semibold text-3xl text-left">{titleParts.title}</p>
+		<p class="font-biryani font-regular text-2xl text-left">{titleParts.subtitle}</p>
+	{:else}
+		<p class="mt-3 font-biryani font-semibold text-3xl text-left">{titleParts.title}</p>
 	{/if}
 
-	<!-- Project year -->
-	<p class="font-ibm mt-1 text-lg">{project.year}</p>
-
 	<!-- PDF, Web, Video links -->
-	<div class="flex items-center justify-between gap-x-2">
+	<div class="mt-3 flex items-center justify-start gap-x-2">
 		{#each project.links as link}
 			<LinkContainer type={link.type} url={link.url} />
 		{/each}
