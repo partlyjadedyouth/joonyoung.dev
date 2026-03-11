@@ -55,7 +55,7 @@
 	<div class="flex flex-col">
 		<!-- Website -->
 		<a
-			href="https://joonyoung.dev"
+			href="https://joonyoung.me"
 			target="_blank"
 			rel="noopener noreferrer"
 			class="inline-flex items-end gap-x-1.5"
@@ -65,7 +65,7 @@
 				src={browser}
 				class="w-5 h-5 align-middle"
 			/>
-			<span class="font-ibm hover:font-medium hover:underline">joonyoung.dev</span>
+			<span class="font-ibm hover:font-medium hover:underline">joonyoung.me</span>
 		</a>
 		<!-- Email -->
 		<ObfuscatedEmail

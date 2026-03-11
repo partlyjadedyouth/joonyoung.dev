@@ -5,7 +5,7 @@
 			Copyright © 2024
 			<a
 				class="hover:underline"
-				href="https://github.com/partlyjadedyouth/joonyoung.dev"
+				href="https://github.com/partlyjadedyouth/joonyoung.me"
 				target="_blank"
 				rel="noopener noreferrer"
 			>
