@@ -8,7 +8,7 @@
 		description:
 			"A qualitative study of home-based care networks that explains how patient agency is expressed at home and why it often disappears from shared care planning",
 		thumbnail,
-		award: "Honorable Mention at CHI26",
+		award: "CHI26 Honorable Mention",
 		role: 'Co-project leader (Project planning, data analysis, paper writing)',
 		links: [
 			{ type: 'arxiv', url: 'https://arxiv.org/abs/2601.23127' }
