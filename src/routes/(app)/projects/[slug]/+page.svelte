@@ -191,7 +191,7 @@
 </svelte:head>
 
 <section class="flex flex-col items-start py-20">
-	<div class="mt-1 flex items-center gap-3">
+	<div class="mt-1 flex flex-col">
 		<!-- Project year -->
 		<p class="font-ibm text-lg">{project.year}</p>
 
@@ -220,7 +220,11 @@
 
 	<div class="mt-5 font-ibm">
 		<!-- Post -->
-		<div class="font-light hyphenate flex flex-col space-y-5" id="post-container" bind:this={postContainerEl}>
+		<div
+			class="font-light hyphenate flex flex-col space-y-5"
+			id="post-container"
+			bind:this={postContainerEl}
+		>
 			{#if isLoading}
 				<p class="text-sm text-gray-500">Loading content...</p>
 			{:else if contentError}
